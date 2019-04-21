@@ -1,6 +1,4 @@
 
-# Clinical Informatics Primer
-
 ## BIME 535, Team Phoenix
 
 
