@@ -1,9 +1,7 @@
 
-Clinical Informatics Primer
+# Clinical Informatics Primer
 
-BIME 535
-
-Team Phoenix
+## BIME 535, Team Phoenix
 
 
 Harsh Patel
