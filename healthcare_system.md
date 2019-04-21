@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Healthcare system"
+title:  "The US Healthcare system"
 ---
 <script src="https://cdn.jsdelivr.net/npm/vega@4"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-lite@2.6.0"></script>
