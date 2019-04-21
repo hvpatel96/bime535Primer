@@ -17,12 +17,9 @@ title: Clinical Informatics Primer
 author: Team Phoenix
 description: >- # this means to ignore newlines until "baseurl:"
   Harsh, Regina, Kathleen, Hannah
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 
 # Build settings
-markdown: kramdown
 theme: minima
 
 
