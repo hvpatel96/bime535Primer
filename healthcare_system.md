@@ -2065,3 +2065,6 @@ The **patient-centered medical home (PCMH)** model is a theoretical framework fo
 
 The PCMH model quite literally extends to patients’ own homes in the context of improving long-term care for geriatric and terminally ill populations. In the US, long-term care has historically been provided by family members or in nursing homes. Institutionalized long-term care is often poorly orchestrated, inhumane and prohibitively expensive, while at-home care places an extensive emotional and physical burden on family caregivers. The **community model** of long-term care is focused on providing financial, practical and emotional support to at-home caregivers financed by a social insurance plan.
 
+
+## References
+Bodenheimer, T., & Grumbach, Kevin. (2016). Understanding health policy: A clinical approach (Seventh ed., McGraw-Hill's AccessMedicine). New York: McGraw-Hill Education.
