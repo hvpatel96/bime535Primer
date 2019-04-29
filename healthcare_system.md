@@ -8,1967 +8,1708 @@ title:  "The US Healthcare system"
 <div id="vis"></div>
 <script type="text/javascript">
                     var spec = {
-                        "config": {"view": {"width": 400, "height": 300}},
-                        "hconcat": [
-                            {
-                                "layer": [
-                                    {
-                                        "data": {"name": "data-1a3466750ebf7806135890a0a92ffa89"},
-                                        "mark": "line",
-                                        "encoding": {
-                                            "color": {"type": "nominal", "field": "Country"},
-                                            "tooltip": [
-                                                {"type": "nominal", "field": "Country"},
-                                                {"type": "quantitative", "field": "Year"},
-                                                {
-                                                    "type": "quantitative",
-                                                    "field": "Life expectancy (years)"
-                                                }
-                                            ],
-                                            "x": {"type": "ordinal", "field": "Year"},
-                                            "y": {
-                                                "type": "quantitative",
-                                                "field": "Life expectancy (years)",
-                                                "scale": {"zero": false},
-                                                "title": "Life expectancy at birth (years)"
-                                            }
-                                        },
-                                        "title": "Life expectancy over time"
-                                    },
-                                    {
-                                        "data": {"name": "data-1a3466750ebf7806135890a0a92ffa89"},
-                                        "mark": "circle",
-                                        "encoding": {
-                                            "color": {"type": "nominal", "field": "Country"},
-                                            "tooltip": [
-                                                {"type": "nominal", "field": "Country"},
-                                                {"type": "quantitative", "field": "Year"},
-                                                {
-                                                    "type": "quantitative",
-                                                    "field": "Life expectancy (years)"
-                                                }
-                                            ],
-                                            "x": {"type": "ordinal", "field": "Year"},
-                                            "y": {
-                                                "type": "quantitative",
-                                                "field": "Life expectancy (years)",
-                                                "scale": {"zero": false},
-                                                "title": "Life expectancy at birth (years)"
-                                            }
-                                        },
-                                        "title": "Life expectancy over time"
-                                    }
-                                ]
-                            },
-                            {
-                                "layer": [
-                                    {
-                                        "layer": [
-                                            {
-                                                "data": {"name": "data-51f1e32e573981ce818d43923bf7c81e"},
-                                                "mark": "line",
-                                                "encoding": {
-                                                    "color": {
-                                                        "type": "nominal",
-                                                        "field": "Country"
-                                                    },
-                                                    "order": {
-                                                        "type": "quantitative",
-                                                        "field": "Year"
-                                                    },
-                                                    "tooltip": [
-                                                        {"type": "nominal", "field": "Country"},
-                                                        {
-                                                            "type": "quantitative",
-                                                            "field": "Value",
-                                                            "title": "% GDP"
-                                                        },
-                                                        {
-                                                            "type": "quantitative",
-                                                            "field": "Life expectancy (years)"
-                                                        },
-                                                        {"type": "quantitative", "field": "Year"}
-                                                    ],
-                                                    "x": {
-                                                        "type": "quantitative",
-                                                        "field": "Value",
-                                                        "title": "% GDP spent on healthcare"
-                                                    },
-                                                    "y": {
-                                                        "type": "quantitative",
-                                                        "field": "Life expectancy (years)",
-                                                        "scale": {"domain": [76, 84]},
-                                                        "title": null
-                                                    }
-                                                },
-                                                "title": "Life expectancy vs. healthcare expenditures (2000-2015 OECD data)"
-                                            },
-                                            {
-                                                "data": {"name": "data-51f1e32e573981ce818d43923bf7c81e"},
-                                                "mark": "circle",
-                                                "encoding": {
-                                                    "color": {
-                                                        "type": "nominal",
-                                                        "field": "Country"
-                                                    },
-                                                    "order": {
-                                                        "type": "quantitative",
-                                                        "field": "Year"
-                                                    },
-                                                    "size": {
-                                                        "type": "ordinal",
-                                                        "field": "Year",
-                                                        "legend": null,
-                                                        "scale": {"range": [30, 60]}
-                                                    },
-                                                    "tooltip": [
-                                                        {"type": "nominal", "field": "Country"},
-                                                        {
-                                                            "type": "quantitative",
-                                                            "field": "Value",
-                                                            "title": "% GDP"
-                                                        },
-                                                        {
-                                                            "type": "quantitative",
-                                                            "field": "Life expectancy (years)"
-                                                        },
-                                                        {"type": "quantitative", "field": "Year"}
-                                                    ],
-                                                    "x": {
-                                                        "type": "quantitative",
-                                                        "field": "Value",
-                                                        "title": "% GDP spent on healthcare"
-                                                    },
-                                                    "y": {
-                                                        "type": "quantitative",
-                                                        "field": "Life expectancy (years)",
-                                                        "scale": {"domain": [76, 84]},
-                                                        "title": null
-                                                    }
-                                                },
-                                                "title": "Life expectancy vs. healthcare expenditures (2000-2015 OECD data)"
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "layer": [
-                                            {
-                                                "data": {"name": "data-1bc533c5a1f870b12bcef174aa1fc57f"},
-                                                "mark": "line",
-                                                "encoding": {
-                                                    "color": {
-                                                        "type": "nominal",
-                                                        "field": "Country"
-                                                    },
-                                                    "order": {
-                                                        "type": "quantitative",
-                                                        "field": "Year"
-                                                    },
-                                                    "tooltip": [
-                                                        {"type": "nominal", "field": "Country"},
-                                                        {
-                                                            "type": "quantitative",
-                                                            "field": "Value",
-                                                            "title": "% GDP"
-                                                        },
-                                                        {
-                                                            "type": "quantitative",
-                                                            "field": "Life expectancy (years)"
-                                                        },
-                                                        {"type": "quantitative", "field": "Year"}
-                                                    ],
-                                                    "x": {
-                                                        "type": "quantitative",
-                                                        "field": "Value",
-                                                        "title": "% GDP spent on healthcare"
-                                                    },
-                                                    "y": {
-                                                        "type": "quantitative",
-                                                        "field": "Life expectancy (years)",
-                                                        "scale": {"domain": [76, 84]},
-                                                        "title": null
-                                                    }
-                                                },
-                                                "title": "Life expectancy vs. healthcare expenditures (2000-2015 OECD data)"
-                                            },
-                                            {
-                                                "data": {"name": "data-1bc533c5a1f870b12bcef174aa1fc57f"},
-                                                "mark": "circle",
-                                                "encoding": {
-                                                    "color": {
-                                                        "type": "nominal",
-                                                        "field": "Country"
-                                                    },
-                                                    "order": {
-                                                        "type": "quantitative",
-                                                        "field": "Year"
-                                                    },
-                                                    "size": {
-                                                        "type": "ordinal",
-                                                        "field": "Year",
-                                                        "legend": null,
-                                                        "scale": {"range": [30, 60]}
-                                                    },
-                                                    "tooltip": [
-                                                        {"type": "nominal", "field": "Country"},
-                                                        {
-                                                            "type": "quantitative",
-                                                            "field": "Value",
-                                                            "title": "% GDP"
-                                                        },
-                                                        {
-                                                            "type": "quantitative",
-                                                            "field": "Life expectancy (years)"
-                                                        },
-                                                        {"type": "quantitative", "field": "Year"}
-                                                    ],
-                                                    "x": {
-                                                        "type": "quantitative",
-                                                        "field": "Value",
-                                                        "title": "% GDP spent on healthcare"
-                                                    },
-                                                    "y": {
-                                                        "type": "quantitative",
-                                                        "field": "Life expectancy (years)",
-                                                        "scale": {"domain": [76, 84]},
-                                                        "title": null
-                                                    }
-                                                },
-                                                "title": "Life expectancy vs. healthcare expenditures (2000-2015 OECD data)"
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "layer": [
-                                            {
-                                                "data": {"name": "data-2ac523789964bec8f21c4d0d8807c1fa"},
-                                                "mark": "line",
-                                                "encoding": {
-                                                    "color": {
-                                                        "type": "nominal",
-                                                        "field": "Country"
-                                                    },
-                                                    "order": {
-                                                        "type": "quantitative",
-                                                        "field": "Year"
-                                                    },
-                                                    "tooltip": [
-                                                        {"type": "nominal", "field": "Country"},
-                                                        {
-                                                            "type": "quantitative",
-                                                            "field": "Value",
-                                                            "title": "% GDP"
-                                                        },
-                                                        {
-                                                            "type": "quantitative",
-                                                            "field": "Life expectancy (years)"
-                                                        },
-                                                        {"type": "quantitative", "field": "Year"}
-                                                    ],
-                                                    "x": {
-                                                        "type": "quantitative",
-                                                        "field": "Value",
-                                                        "title": "% GDP spent on healthcare"
-                                                    },
-                                                    "y": {
-                                                        "type": "quantitative",
-                                                        "field": "Life expectancy (years)",
-                                                        "scale": {"domain": [76, 84]},
-                                                        "title": null
-                                                    }
-                                                },
-                                                "title": "Life expectancy vs. healthcare expenditures (2000-2015 OECD data)"
-                                            },
-                                            {
-                                                "data": {"name": "data-2ac523789964bec8f21c4d0d8807c1fa"},
-                                                "mark": "circle",
-                                                "encoding": {
-                                                    "color": {
-                                                        "type": "nominal",
-                                                        "field": "Country"
-                                                    },
-                                                    "order": {
-                                                        "type": "quantitative",
-                                                        "field": "Year"
-                                                    },
-                                                    "size": {
-                                                        "type": "ordinal",
-                                                        "field": "Year",
-                                                        "legend": null,
-                                                        "scale": {"range": [30, 60]}
-                                                    },
-                                                    "tooltip": [
-                                                        {"type": "nominal", "field": "Country"},
-                                                        {
-                                                            "type": "quantitative",
-                                                            "field": "Value",
-                                                            "title": "% GDP"
-                                                        },
-                                                        {
-                                                            "type": "quantitative",
-                                                            "field": "Life expectancy (years)"
-                                                        },
-                                                        {"type": "quantitative", "field": "Year"}
-                                                    ],
-                                                    "x": {
-                                                        "type": "quantitative",
-                                                        "field": "Value",
-                                                        "title": "% GDP spent on healthcare"
-                                                    },
-                                                    "y": {
-                                                        "type": "quantitative",
-                                                        "field": "Life expectancy (years)",
-                                                        "scale": {"domain": [76, 84]},
-                                                        "title": null
-                                                    }
-                                                },
-                                                "title": "Life expectancy vs. healthcare expenditures (2000-2015 OECD data)"
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "layer": [
-                                            {
-                                                "data": {"name": "data-2902ba3840acc2010d0b0b2990024abd"},
-                                                "mark": "line",
-                                                "encoding": {
-                                                    "color": {
-                                                        "type": "nominal",
-                                                        "field": "Country"
-                                                    },
-                                                    "order": {
-                                                        "type": "quantitative",
-                                                        "field": "Year"
-                                                    },
-                                                    "tooltip": [
-                                                        {"type": "nominal", "field": "Country"},
-                                                        {
-                                                            "type": "quantitative",
-                                                            "field": "Value",
-                                                            "title": "% GDP"
-                                                        },
-                                                        {
-                                                            "type": "quantitative",
-                                                            "field": "Life expectancy (years)"
-                                                        },
-                                                        {"type": "quantitative", "field": "Year"}
-                                                    ],
-                                                    "x": {
-                                                        "type": "quantitative",
-                                                        "field": "Value",
-                                                        "title": "% GDP spent on healthcare"
-                                                    },
-                                                    "y": {
-                                                        "type": "quantitative",
-                                                        "field": "Life expectancy (years)",
-                                                        "scale": {"domain": [76, 84]},
-                                                        "title": null
-                                                    }
-                                                },
-                                                "title": "Life expectancy vs. healthcare expenditures (2000-2015 OECD data)"
-                                            },
-                                            {
-                                                "data": {"name": "data-2902ba3840acc2010d0b0b2990024abd"},
-                                                "mark": "circle",
-                                                "encoding": {
-                                                    "color": {
-                                                        "type": "nominal",
-                                                        "field": "Country"
-                                                    },
-                                                    "order": {
-                                                        "type": "quantitative",
-                                                        "field": "Year"
-                                                    },
-                                                    "size": {
-                                                        "type": "ordinal",
-                                                        "field": "Year",
-                                                        "legend": null,
-                                                        "scale": {"range": [30, 60]}
-                                                    },
-                                                    "tooltip": [
-                                                        {"type": "nominal", "field": "Country"},
-                                                        {
-                                                            "type": "quantitative",
-                                                            "field": "Value",
-                                                            "title": "% GDP"
-                                                        },
-                                                        {
-                                                            "type": "quantitative",
-                                                            "field": "Life expectancy (years)"
-                                                        },
-                                                        {"type": "quantitative", "field": "Year"}
-                                                    ],
-                                                    "x": {
-                                                        "type": "quantitative",
-                                                        "field": "Value",
-                                                        "title": "% GDP spent on healthcare"
-                                                    },
-                                                    "y": {
-                                                        "type": "quantitative",
-                                                        "field": "Life expectancy (years)",
-                                                        "scale": {"domain": [76, 84]},
-                                                        "title": null
-                                                    }
-                                                },
-                                                "title": "Life expectancy vs. healthcare expenditures (2000-2015 OECD data)"
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "layer": [
-                                            {
-                                                "data": {"name": "data-aad6a118585346b56642884e2639877c"},
-                                                "mark": "line",
-                                                "encoding": {
-                                                    "color": {
-                                                        "type": "nominal",
-                                                        "field": "Country"
-                                                    },
-                                                    "order": {
-                                                        "type": "quantitative",
-                                                        "field": "Year"
-                                                    },
-                                                    "tooltip": [
-                                                        {"type": "nominal", "field": "Country"},
-                                                        {
-                                                            "type": "quantitative",
-                                                            "field": "Value",
-                                                            "title": "% GDP"
-                                                        },
-                                                        {
-                                                            "type": "quantitative",
-                                                            "field": "Life expectancy (years)"
-                                                        },
-                                                        {"type": "quantitative", "field": "Year"}
-                                                    ],
-                                                    "x": {
-                                                        "type": "quantitative",
-                                                        "field": "Value",
-                                                        "title": "% GDP spent on healthcare"
-                                                    },
-                                                    "y": {
-                                                        "type": "quantitative",
-                                                        "field": "Life expectancy (years)",
-                                                        "scale": {"domain": [76, 84]},
-                                                        "title": null
-                                                    }
-                                                },
-                                                "title": "Life expectancy vs. healthcare expenditures (2000-2015 OECD data)"
-                                            },
-                                            {
-                                                "data": {"name": "data-aad6a118585346b56642884e2639877c"},
-                                                "mark": "circle",
-                                                "encoding": {
-                                                    "color": {
-                                                        "type": "nominal",
-                                                        "field": "Country"
-                                                    },
-                                                    "order": {
-                                                        "type": "quantitative",
-                                                        "field": "Year"
-                                                    },
-                                                    "size": {
-                                                        "type": "ordinal",
-                                                        "field": "Year",
-                                                        "legend": null,
-                                                        "scale": {"range": [30, 60]}
-                                                    },
-                                                    "tooltip": [
-                                                        {"type": "nominal", "field": "Country"},
-                                                        {
-                                                            "type": "quantitative",
-                                                            "field": "Value",
-                                                            "title": "% GDP"
-                                                        },
-                                                        {
-                                                            "type": "quantitative",
-                                                            "field": "Life expectancy (years)"
-                                                        },
-                                                        {"type": "quantitative", "field": "Year"}
-                                                    ],
-                                                    "x": {
-                                                        "type": "quantitative",
-                                                        "field": "Value",
-                                                        "title": "% GDP spent on healthcare"
-                                                    },
-                                                    "y": {
-                                                        "type": "quantitative",
-                                                        "field": "Life expectancy (years)",
-                                                        "scale": {"domain": [76, 84]},
-                                                        "title": null
-                                                    }
-                                                },
-                                                "title": "Life expectancy vs. healthcare expenditures (2000-2015 OECD data)"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
-                        ],
-                        "$schema": "https://vega.github.io/schema/vega-lite/v2.6.0.json",
-                        "datasets": {
-                            "data-1a3466750ebf7806135890a0a92ffa89": [
-                                {"Country": "Canada", "Year": 2000, "Life expectancy (years)": 79},
-                                {
-                                    "Country": "Canada",
-                                    "Year": 2001,
-                                    "Life expectancy (years)": 79.2
-                                },
-                                {
-                                    "Country": "Canada",
-                                    "Year": 2002,
-                                    "Life expectancy (years)": 79.4
-                                },
-                                {
-                                    "Country": "Canada",
-                                    "Year": 2003,
-                                    "Life expectancy (years)": 79.6
-                                },
-                                {
-                                    "Country": "Canada",
-                                    "Year": 2004,
-                                    "Life expectancy (years)": 79.8
-                                },
-                                {"Country": "Canada", "Year": 2005, "Life expectancy (years)": 80},
-                                {
-                                    "Country": "Canada",
-                                    "Year": 2006,
-                                    "Life expectancy (years)": 80.3
-                                },
-                                {
-                                    "Country": "Canada",
-                                    "Year": 2007,
-                                    "Life expectancy (years)": 80.4
-                                },
-                                {
-                                    "Country": "Canada",
-                                    "Year": 2008,
-                                    "Life expectancy (years)": 80.6
-                                },
-                                {
-                                    "Country": "Canada",
-                                    "Year": 2009,
-                                    "Life expectancy (years)": 80.8
-                                },
-                                {
-                                    "Country": "Canada",
-                                    "Year": 2010,
-                                    "Life expectancy (years)": 81.1
-                                },
-                                {
-                                    "Country": "Canada",
-                                    "Year": 2011,
-                                    "Life expectancy (years)": 81.3
-                                },
-                                {
-                                    "Country": "Canada",
-                                    "Year": 2012,
-                                    "Life expectancy (years)": 81.5
-                                },
-                                {
-                                    "Country": "Canada",
-                                    "Year": 2013,
-                                    "Life expectancy (years)": 81.7
-                                },
-                                {
-                                    "Country": "Canada",
-                                    "Year": 2014,
-                                    "Life expectancy (years)": 81.8
-                                },
-                                {
-                                    "Country": "Canada",
-                                    "Year": 2015,
-                                    "Life expectancy (years)": 81.9
-                                },
-                                {
-                                    "Country": "Germany",
-                                    "Year": 2000,
-                                    "Life expectancy (years)": 78.2
-                                },
-                                {
-                                    "Country": "Germany",
-                                    "Year": 2001,
-                                    "Life expectancy (years)": 78.5
-                                },
-                                {
-                                    "Country": "Germany",
-                                    "Year": 2002,
-                                    "Life expectancy (years)": 78.5
-                                },
-                                {
-                                    "Country": "Germany",
-                                    "Year": 2003,
-                                    "Life expectancy (years)": 78.6
-                                },
-                                {
-                                    "Country": "Germany",
-                                    "Year": 2004,
-                                    "Life expectancy (years)": 79.2
-                                },
-                                {
-                                    "Country": "Germany",
-                                    "Year": 2005,
-                                    "Life expectancy (years)": 79.4
-                                },
-                                {
-                                    "Country": "Germany",
-                                    "Year": 2006,
-                                    "Life expectancy (years)": 79.8
-                                },
-                                {
-                                    "Country": "Germany",
-                                    "Year": 2007,
-                                    "Life expectancy (years)": 80.1
-                                },
-                                {
-                                    "Country": "Germany",
-                                    "Year": 2008,
-                                    "Life expectancy (years)": 80.2
-                                },
-                                {
-                                    "Country": "Germany",
-                                    "Year": 2009,
-                                    "Life expectancy (years)": 80.3
-                                },
-                                {
-                                    "Country": "Germany",
-                                    "Year": 2010,
-                                    "Life expectancy (years)": 80.5
-                                },
-                                {
-                                    "Country": "Germany",
-                                    "Year": 2011,
-                                    "Life expectancy (years)": 80.5
-                                },
-                                {
-                                    "Country": "Germany",
-                                    "Year": 2012,
-                                    "Life expectancy (years)": 80.6
-                                },
-                                {
-                                    "Country": "Germany",
-                                    "Year": 2013,
-                                    "Life expectancy (years)": 80.6
-                                },
-                                {
-                                    "Country": "Germany",
-                                    "Year": 2014,
-                                    "Life expectancy (years)": 81.2
-                                },
-                                {
-                                    "Country": "Germany",
-                                    "Year": 2015,
-                                    "Life expectancy (years)": 80.7
-                                },
-                                {"Country": "Japan", "Year": 2000, "Life expectancy (years)": 81.2},
-                                {"Country": "Japan", "Year": 2001, "Life expectancy (years)": 81.5},
-                                {"Country": "Japan", "Year": 2002, "Life expectancy (years)": 81.8},
-                                {"Country": "Japan", "Year": 2003, "Life expectancy (years)": 81.8},
-                                {"Country": "Japan", "Year": 2004, "Life expectancy (years)": 82.1},
-                                {"Country": "Japan", "Year": 2005, "Life expectancy (years)": 82},
-                                {"Country": "Japan", "Year": 2006, "Life expectancy (years)": 82.4},
-                                {"Country": "Japan", "Year": 2007, "Life expectancy (years)": 82.6},
-                                {"Country": "Japan", "Year": 2008, "Life expectancy (years)": 82.7},
-                                {"Country": "Japan", "Year": 2009, "Life expectancy (years)": 83},
-                                {"Country": "Japan", "Year": 2010, "Life expectancy (years)": 82.9},
-                                {"Country": "Japan", "Year": 2011, "Life expectancy (years)": 82.7},
-                                {"Country": "Japan", "Year": 2012, "Life expectancy (years)": 83.2},
-                                {"Country": "Japan", "Year": 2013, "Life expectancy (years)": 83.4},
-                                {"Country": "Japan", "Year": 2014, "Life expectancy (years)": 83.7},
-                                {"Country": "Japan", "Year": 2015, "Life expectancy (years)": 83.9},
-                                {
-                                    "Country": "United Kingdom",
-                                    "Year": 2000,
-                                    "Life expectancy (years)": 77.9
-                                },
-                                {
-                                    "Country": "United Kingdom",
-                                    "Year": 2001,
-                                    "Life expectancy (years)": 78.2
-                                },
-                                {
-                                    "Country": "United Kingdom",
-                                    "Year": 2002,
-                                    "Life expectancy (years)": 78.3
-                                },
-                                {
-                                    "Country": "United Kingdom",
-                                    "Year": 2003,
-                                    "Life expectancy (years)": 78.4
-                                },
-                                {
-                                    "Country": "United Kingdom",
-                                    "Year": 2004,
-                                    "Life expectancy (years)": 79
-                                },
-                                {
-                                    "Country": "United Kingdom",
-                                    "Year": 2005,
-                                    "Life expectancy (years)": 79.2
-                                },
-                                {
-                                    "Country": "United Kingdom",
-                                    "Year": 2006,
-                                    "Life expectancy (years)": 79.5
-                                },
-                                {
-                                    "Country": "United Kingdom",
-                                    "Year": 2007,
-                                    "Life expectancy (years)": 79.7
-                                },
-                                {
-                                    "Country": "United Kingdom",
-                                    "Year": 2008,
-                                    "Life expectancy (years)": 79.8
-                                },
-                                {
-                                    "Country": "United Kingdom",
-                                    "Year": 2009,
-                                    "Life expectancy (years)": 80.4
-                                },
-                                {
-                                    "Country": "United Kingdom",
-                                    "Year": 2010,
-                                    "Life expectancy (years)": 80.6
-                                },
-                                {
-                                    "Country": "United Kingdom",
-                                    "Year": 2011,
-                                    "Life expectancy (years)": 81
-                                },
-                                {
-                                    "Country": "United Kingdom",
-                                    "Year": 2012,
-                                    "Life expectancy (years)": 81
-                                },
-                                {
-                                    "Country": "United Kingdom",
-                                    "Year": 2013,
-                                    "Life expectancy (years)": 81.1
-                                },
-                                {
-                                    "Country": "United Kingdom",
-                                    "Year": 2014,
-                                    "Life expectancy (years)": 81.4
-                                },
-                                {
-                                    "Country": "United Kingdom",
-                                    "Year": 2015,
-                                    "Life expectancy (years)": 81
-                                },
-                                {
-                                    "Country": "United States",
-                                    "Year": 2000,
-                                    "Life expectancy (years)": 76.7
-                                },
-                                {
-                                    "Country": "United States",
-                                    "Year": 2001,
-                                    "Life expectancy (years)": 76.9
-                                },
-                                {
-                                    "Country": "United States",
-                                    "Year": 2002,
-                                    "Life expectancy (years)": 77
-                                },
-                                {
-                                    "Country": "United States",
-                                    "Year": 2003,
-                                    "Life expectancy (years)": 77.1
-                                },
-                                {
-                                    "Country": "United States",
-                                    "Year": 2004,
-                                    "Life expectancy (years)": 77.6
-                                },
-                                {
-                                    "Country": "United States",
-                                    "Year": 2005,
-                                    "Life expectancy (years)": 77.6
-                                },
-                                {
-                                    "Country": "United States",
-                                    "Year": 2006,
-                                    "Life expectancy (years)": 77.8
-                                },
-                                {
-                                    "Country": "United States",
-                                    "Year": 2007,
-                                    "Life expectancy (years)": 78.1
-                                },
-                                {
-                                    "Country": "United States",
-                                    "Year": 2008,
-                                    "Life expectancy (years)": 78.1
-                                },
-                                {
-                                    "Country": "United States",
-                                    "Year": 2009,
-                                    "Life expectancy (years)": 78.5
-                                },
-                                {
-                                    "Country": "United States",
-                                    "Year": 2010,
-                                    "Life expectancy (years)": 78.6
-                                },
-                                {
-                                    "Country": "United States",
-                                    "Year": 2011,
-                                    "Life expectancy (years)": 78.7
-                                },
-                                {
-                                    "Country": "United States",
-                                    "Year": 2012,
-                                    "Life expectancy (years)": 78.8
-                                },
-                                {
-                                    "Country": "United States",
-                                    "Year": 2013,
-                                    "Life expectancy (years)": 78.8
-                                },
-                                {
-                                    "Country": "United States",
-                                    "Year": 2014,
-                                    "Life expectancy (years)": 78.9
-                                },
-                                {
-                                    "Country": "United States",
-                                    "Year": 2015,
-                                    "Life expectancy (years)": 78.7
-                                }
-                            ],
-                            "data-51f1e32e573981ce818d43923bf7c81e": [
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "United States",
-                                    "Year": 2000,
-                                    "Unit": "Percentage",
-                                    "Value": 12.502,
-                                    "Life expectancy (years)": 76.7,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": null,
-                                    "Region": "Americas"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "United States",
-                                    "Year": 2001,
-                                    "Unit": "Percentage",
-                                    "Value": 13.169,
-                                    "Life expectancy (years)": 76.9,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": null,
-                                    "Region": "Americas"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "United States",
-                                    "Year": 2002,
-                                    "Unit": "Percentage",
-                                    "Value": 13.954,
-                                    "Life expectancy (years)": 77,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": null,
-                                    "Region": "Americas"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "United States",
-                                    "Year": 2003,
-                                    "Unit": "Percentage",
-                                    "Value": 14.455,
-                                    "Life expectancy (years)": 77.1,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": null,
-                                    "Region": "Americas"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "United States",
-                                    "Year": 2004,
-                                    "Unit": "Percentage",
-                                    "Value": 14.537,
-                                    "Life expectancy (years)": 77.6,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": null,
-                                    "Region": "Americas"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "United States",
-                                    "Year": 2005,
-                                    "Unit": "Percentage",
-                                    "Value": 14.541,
-                                    "Life expectancy (years)": 77.6,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 6.9,
-                                    "Region": "Americas"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "United States",
-                                    "Year": 2006,
-                                    "Unit": "Percentage",
-                                    "Value": 14.658,
-                                    "Life expectancy (years)": 77.8,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 6.7,
-                                    "Region": "Americas"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "United States",
-                                    "Year": 2007,
-                                    "Unit": "Percentage",
-                                    "Value": 14.898,
-                                    "Life expectancy (years)": 78.1,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 6.8,
-                                    "Region": "Americas"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "United States",
-                                    "Year": 2008,
-                                    "Unit": "Percentage",
-                                    "Value": 15.294,
-                                    "Life expectancy (years)": 78.1,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 6.6,
-                                    "Region": "Americas"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "United States",
-                                    "Year": 2009,
-                                    "Unit": "Percentage",
-                                    "Value": 16.343,
-                                    "Life expectancy (years)": 78.5,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 6.4,
-                                    "Region": "Americas"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "United States",
-                                    "Year": 2010,
-                                    "Unit": "Percentage",
-                                    "Value": 16.413,
-                                    "Life expectancy (years)": 78.6,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 6.1,
-                                    "Region": "Americas"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "United States",
-                                    "Year": 2011,
-                                    "Unit": "Percentage",
-                                    "Value": 16.367,
-                                    "Life expectancy (years)": 78.7,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 6.1,
-                                    "Region": "Americas"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "United States",
-                                    "Year": 2012,
-                                    "Unit": "Percentage",
-                                    "Value": 16.366,
-                                    "Life expectancy (years)": 78.8,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 6,
-                                    "Region": "Americas"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "United States",
-                                    "Year": 2013,
-                                    "Unit": "Percentage",
-                                    "Value": 16.331,
-                                    "Life expectancy (years)": 78.8,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 6,
-                                    "Region": "Americas"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "United States",
-                                    "Year": 2014,
-                                    "Unit": "Percentage",
-                                    "Value": 16.505,
-                                    "Life expectancy (years)": 78.9,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 5.8,
-                                    "Region": "Americas"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "United States",
-                                    "Year": 2015,
-                                    "Unit": "Percentage",
-                                    "Value": 16.816,
-                                    "Life expectancy (years)": 78.7,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 5.9,
-                                    "Region": "Americas"
-                                }
-                            ],
-                            "data-1bc533c5a1f870b12bcef174aa1fc57f": [
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "United Kingdom",
-                                    "Year": 2000,
-                                    "Unit": "Percentage",
-                                    "Value": 5.972,
-                                    "Life expectancy (years)": 77.9,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": null,
-                                    "Region": "Europe & Central Asia"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "United Kingdom",
-                                    "Year": 2001,
-                                    "Unit": "Percentage",
-                                    "Value": 6.329,
-                                    "Life expectancy (years)": 78.2,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": null,
-                                    "Region": "Europe & Central Asia"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "United Kingdom",
-                                    "Year": 2002,
-                                    "Unit": "Percentage",
-                                    "Value": 6.5870000000000015,
-                                    "Life expectancy (years)": 78.3,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": null,
-                                    "Region": "Europe & Central Asia"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "United Kingdom",
-                                    "Year": 2003,
-                                    "Unit": "Percentage",
-                                    "Value": 6.851,
-                                    "Life expectancy (years)": 78.4,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": null,
-                                    "Region": "Europe & Central Asia"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "United Kingdom",
-                                    "Year": 2004,
-                                    "Unit": "Percentage",
-                                    "Value": 7.051,
-                                    "Life expectancy (years)": 79,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": null,
-                                    "Region": "Europe & Central Asia"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "United Kingdom",
-                                    "Year": 2005,
-                                    "Unit": "Percentage",
-                                    "Value": 7.187,
-                                    "Life expectancy (years)": 79.2,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 5.1,
-                                    "Region": "Europe & Central Asia"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "United Kingdom",
-                                    "Year": 2006,
-                                    "Unit": "Percentage",
-                                    "Value": 7.327000000000001,
-                                    "Life expectancy (years)": 79.5,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 4.9,
-                                    "Region": "Europe & Central Asia"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "United Kingdom",
-                                    "Year": 2007,
-                                    "Unit": "Percentage",
-                                    "Value": 7.432,
-                                    "Life expectancy (years)": 79.7,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 4.7,
-                                    "Region": "Europe & Central Asia"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "United Kingdom",
-                                    "Year": 2008,
-                                    "Unit": "Percentage",
-                                    "Value": 7.681,
-                                    "Life expectancy (years)": 79.8,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 4.6,
-                                    "Region": "Europe & Central Asia"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "United Kingdom",
-                                    "Year": 2009,
-                                    "Unit": "Percentage",
-                                    "Value": 8.527000000000001,
-                                    "Life expectancy (years)": 80.4,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 4.5,
-                                    "Region": "Europe & Central Asia"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "United Kingdom",
-                                    "Year": 2010,
-                                    "Unit": "Percentage",
-                                    "Value": 8.474,
-                                    "Life expectancy (years)": 80.6,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 4.2,
-                                    "Region": "Europe & Central Asia"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "United Kingdom",
-                                    "Year": 2011,
-                                    "Unit": "Percentage",
-                                    "Value": 8.422,
-                                    "Life expectancy (years)": 81,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 4.2,
-                                    "Region": "Europe & Central Asia"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "United Kingdom",
-                                    "Year": 2012,
-                                    "Unit": "Percentage",
-                                    "Value": 8.339,
-                                    "Life expectancy (years)": 81,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 4,
-                                    "Region": "Europe & Central Asia"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "United Kingdom",
-                                    "Year": 2013,
-                                    "Unit": "Percentage",
-                                    "Value": 9.772,
-                                    "Life expectancy (years)": 81.1,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 3.9,
-                                    "Region": "Europe & Central Asia"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "United Kingdom",
-                                    "Year": 2014,
-                                    "Unit": "Percentage",
-                                    "Value": 9.724,
-                                    "Life expectancy (years)": 81.4,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 3.9,
-                                    "Region": "Europe & Central Asia"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "United Kingdom",
-                                    "Year": 2015,
-                                    "Unit": "Percentage",
-                                    "Value": 9.793,
-                                    "Life expectancy (years)": 81,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 3.9,
-                                    "Region": "Europe & Central Asia"
-                                }
-                            ],
-                            "data-2ac523789964bec8f21c4d0d8807c1fa": [
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "Germany",
-                                    "Year": 2000,
-                                    "Unit": "Percentage",
-                                    "Value": 9.828,
-                                    "Life expectancy (years)": 78.2,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": null,
-                                    "Region": "Europe & Central Asia"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "Germany",
-                                    "Year": 2001,
-                                    "Unit": "Percentage",
-                                    "Value": 9.864,
-                                    "Life expectancy (years)": 78.5,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": null,
-                                    "Region": "Europe & Central Asia"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "Germany",
-                                    "Year": 2002,
-                                    "Unit": "Percentage",
-                                    "Value": 10.11,
-                                    "Life expectancy (years)": 78.5,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": null,
-                                    "Region": "Europe & Central Asia"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "Germany",
-                                    "Year": 2003,
-                                    "Unit": "Percentage",
-                                    "Value": 10.332,
-                                    "Life expectancy (years)": 78.6,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": null,
-                                    "Region": "Europe & Central Asia"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "Germany",
-                                    "Year": 2004,
-                                    "Unit": "Percentage",
-                                    "Value": 10.076,
-                                    "Life expectancy (years)": 79.2,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": null,
-                                    "Region": "Europe & Central Asia"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "Germany",
-                                    "Year": 2005,
-                                    "Unit": "Percentage",
-                                    "Value": 10.225,
-                                    "Life expectancy (years)": 79.4,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 3.9,
-                                    "Region": "Europe & Central Asia"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "Germany",
-                                    "Year": 2006,
-                                    "Unit": "Percentage",
-                                    "Value": 10.113,
-                                    "Life expectancy (years)": 79.8,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 3.8,
-                                    "Region": "Europe & Central Asia"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "Germany",
-                                    "Year": 2007,
-                                    "Unit": "Percentage",
-                                    "Value": 9.969,
-                                    "Life expectancy (years)": 80.1,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 3.9,
-                                    "Region": "Europe & Central Asia"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "Germany",
-                                    "Year": 2008,
-                                    "Unit": "Percentage",
-                                    "Value": 10.155,
-                                    "Life expectancy (years)": 80.2,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 3.5,
-                                    "Region": "Europe & Central Asia"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "Germany",
-                                    "Year": 2009,
-                                    "Unit": "Percentage",
-                                    "Value": 11.137,
-                                    "Life expectancy (years)": 80.3,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 3.5,
-                                    "Region": "Europe & Central Asia"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "Germany",
-                                    "Year": 2010,
-                                    "Unit": "Percentage",
-                                    "Value": 11.004,
-                                    "Life expectancy (years)": 80.5,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 3.4,
-                                    "Region": "Europe & Central Asia"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "Germany",
-                                    "Year": 2011,
-                                    "Unit": "Percentage",
-                                    "Value": 10.715,
-                                    "Life expectancy (years)": 80.5,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 3.6,
-                                    "Region": "Europe & Central Asia"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "Germany",
-                                    "Year": 2012,
-                                    "Unit": "Percentage",
-                                    "Value": 10.767,
-                                    "Life expectancy (years)": 80.6,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 3.3,
-                                    "Region": "Europe & Central Asia"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "Germany",
-                                    "Year": 2013,
-                                    "Unit": "Percentage",
-                                    "Value": 10.915,
-                                    "Life expectancy (years)": 80.6,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 3.3,
-                                    "Region": "Europe & Central Asia"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "Germany",
-                                    "Year": 2014,
-                                    "Unit": "Percentage",
-                                    "Value": 10.957,
-                                    "Life expectancy (years)": 81.2,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 3.2,
-                                    "Region": "Europe & Central Asia"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "Germany",
-                                    "Year": 2015,
-                                    "Unit": "Percentage",
-                                    "Value": 11.079,
-                                    "Life expectancy (years)": 80.7,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 3.3,
-                                    "Region": "Europe & Central Asia"
-                                }
-                            ],
-                            "data-2902ba3840acc2010d0b0b2990024abd": [
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "Canada",
-                                    "Year": 2000,
-                                    "Unit": "Percentage",
-                                    "Value": 8.276,
-                                    "Life expectancy (years)": 79,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": null,
-                                    "Region": "Americas"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "Canada",
-                                    "Year": 2001,
-                                    "Unit": "Percentage",
-                                    "Value": 8.655,
-                                    "Life expectancy (years)": 79.2,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": null,
-                                    "Region": "Americas"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "Canada",
-                                    "Year": 2002,
-                                    "Unit": "Percentage",
-                                    "Value": 8.888,
-                                    "Life expectancy (years)": 79.4,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": null,
-                                    "Region": "Americas"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "Canada",
-                                    "Year": 2003,
-                                    "Unit": "Percentage",
-                                    "Value": 9.043,
-                                    "Life expectancy (years)": 79.6,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": null,
-                                    "Region": "Americas"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "Canada",
-                                    "Year": 2004,
-                                    "Unit": "Percentage",
-                                    "Value": 9.097,
-                                    "Life expectancy (years)": 79.8,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": null,
-                                    "Region": "Americas"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "Canada",
-                                    "Year": 2005,
-                                    "Unit": "Percentage",
-                                    "Value": 9.064,
-                                    "Life expectancy (years)": 80,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 5.4,
-                                    "Region": "Americas"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "Canada",
-                                    "Year": 2006,
-                                    "Unit": "Percentage",
-                                    "Value": 9.207,
-                                    "Life expectancy (years)": 80.3,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 5,
-                                    "Region": "Americas"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "Canada",
-                                    "Year": 2007,
-                                    "Unit": "Percentage",
-                                    "Value": 9.298,
-                                    "Life expectancy (years)": 80.4,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 5.1,
-                                    "Region": "Americas"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "Canada",
-                                    "Year": 2008,
-                                    "Unit": "Percentage",
-                                    "Value": 9.465,
-                                    "Life expectancy (years)": 80.6,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 5.1,
-                                    "Region": "Americas"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "Canada",
-                                    "Year": 2009,
-                                    "Unit": "Percentage",
-                                    "Value": 10.574000000000002,
-                                    "Life expectancy (years)": 80.8,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 4.9,
-                                    "Region": "Americas"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "Canada",
-                                    "Year": 2010,
-                                    "Unit": "Percentage",
-                                    "Value": 10.556,
-                                    "Life expectancy (years)": 81.1,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 5,
-                                    "Region": "Americas"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "Canada",
-                                    "Year": 2011,
-                                    "Unit": "Percentage",
-                                    "Value": 10.23,
-                                    "Life expectancy (years)": 81.3,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 4.9,
-                                    "Region": "Americas"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "Canada",
-                                    "Year": 2012,
-                                    "Unit": "Percentage",
-                                    "Value": 10.24,
-                                    "Life expectancy (years)": 81.5,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 4.8,
-                                    "Region": "Americas"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "Canada",
-                                    "Year": 2013,
-                                    "Unit": "Percentage",
-                                    "Value": 10.133,
-                                    "Life expectancy (years)": 81.7,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 5,
-                                    "Region": "Americas"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "Canada",
-                                    "Year": 2014,
-                                    "Unit": "Percentage",
-                                    "Value": 9.97,
-                                    "Life expectancy (years)": 81.8,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 4.7,
-                                    "Region": "Americas"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "Canada",
-                                    "Year": 2015,
-                                    "Unit": "Percentage",
-                                    "Value": 10.377,
-                                    "Life expectancy (years)": 81.9,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": null,
-                                    "Region": "Americas"
-                                }
-                            ],
-                            "data-aad6a118585346b56642884e2639877c": [
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "Japan",
-                                    "Year": 2000,
-                                    "Unit": "Percentage",
-                                    "Value": 7.151,
-                                    "Life expectancy (years)": 81.2,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": null,
-                                    "Region": "East Asia & Pacific"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "Japan",
-                                    "Year": 2001,
-                                    "Unit": "Percentage",
-                                    "Value": 7.359,
-                                    "Life expectancy (years)": 81.5,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": null,
-                                    "Region": "East Asia & Pacific"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "Japan",
-                                    "Year": 2002,
-                                    "Unit": "Percentage",
-                                    "Value": 7.473,
-                                    "Life expectancy (years)": 81.8,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": null,
-                                    "Region": "East Asia & Pacific"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "Japan",
-                                    "Year": 2003,
-                                    "Unit": "Percentage",
-                                    "Value": 7.6110000000000015,
-                                    "Life expectancy (years)": 81.8,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": null,
-                                    "Region": "East Asia & Pacific"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "Japan",
-                                    "Year": 2004,
-                                    "Unit": "Percentage",
-                                    "Value": 7.657,
-                                    "Life expectancy (years)": 82.1,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": null,
-                                    "Region": "East Asia & Pacific"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "Japan",
-                                    "Year": 2005,
-                                    "Unit": "Percentage",
-                                    "Value": 7.7810000000000015,
-                                    "Life expectancy (years)": 82,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 2.8,
-                                    "Region": "East Asia & Pacific"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "Japan",
-                                    "Year": 2006,
-                                    "Unit": "Percentage",
-                                    "Value": 7.808,
-                                    "Life expectancy (years)": 82.4,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 2.6,
-                                    "Region": "East Asia & Pacific"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "Japan",
-                                    "Year": 2007,
-                                    "Unit": "Percentage",
-                                    "Value": 7.89,
-                                    "Life expectancy (years)": 82.6,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 2.6,
-                                    "Region": "East Asia & Pacific"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "Japan",
-                                    "Year": 2008,
-                                    "Unit": "Percentage",
-                                    "Value": 8.2,
-                                    "Life expectancy (years)": 82.7,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 2.6,
-                                    "Region": "East Asia & Pacific"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "Japan",
-                                    "Year": 2009,
-                                    "Unit": "Percentage",
-                                    "Value": 9.058,
-                                    "Life expectancy (years)": 83,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 2.4,
-                                    "Region": "East Asia & Pacific"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "Japan",
-                                    "Year": 2010,
-                                    "Unit": "Percentage",
-                                    "Value": 9.157,
-                                    "Life expectancy (years)": 82.9,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 2.3,
-                                    "Region": "East Asia & Pacific"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "Japan",
-                                    "Year": 2011,
-                                    "Unit": "Percentage",
-                                    "Value": 10.617,
-                                    "Life expectancy (years)": 82.7,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 2.3,
-                                    "Region": "East Asia & Pacific"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "Japan",
-                                    "Year": 2012,
-                                    "Unit": "Percentage",
-                                    "Value": 10.791,
-                                    "Life expectancy (years)": 83.2,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 2.2,
-                                    "Region": "East Asia & Pacific"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "Japan",
-                                    "Year": 2013,
-                                    "Unit": "Percentage",
-                                    "Value": 10.792,
-                                    "Life expectancy (years)": 83.4,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 2.1,
-                                    "Region": "East Asia & Pacific"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "Japan",
-                                    "Year": 2014,
-                                    "Unit": "Percentage",
-                                    "Value": 10.832,
-                                    "Life expectancy (years)": 83.7,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 2.1,
-                                    "Region": "East Asia & Pacific"
-                                },
-                                {
-                                    "Financing scheme": "All financing schemes",
-                                    "Function": "Current expenditure on health (all functions)",
-                                    "Provider": "All providers",
-                                    "Measure": "Share of gross domestic product",
-                                    "Country": "Japan",
-                                    "Year": 2015,
-                                    "Unit": "Percentage",
-                                    "Value": 10.872,
-                                    "Life expectancy (years)": 83.9,
-                                    "ComparisonCountry": true,
-                                    "Infant mortality (per 1000 live births)": 1.9,
-                                    "Region": "East Asia & Pacific"
-                                }
-                            ]
-                        }
-                    }
+  "config": {"view": {"width": 400, "height": 300}},
+  "hconcat": [
+    {
+      "layer": [
+        {
+          "data": {"name": "data-1a3466750ebf7806135890a0a92ffa89"},
+          "mark": "line",
+          "encoding": {
+            "color": {"type": "nominal", "field": "Country"},
+            "tooltip": [
+              {"type": "nominal", "field": "Country"},
+              {"type": "quantitative", "field": "Year"},
+              {"type": "quantitative", "field": "Life expectancy (years)"}
+            ],
+            "x": {"type": "ordinal", "field": "Year"},
+            "y": {
+              "type": "quantitative",
+              "field": "Life expectancy (years)",
+              "scale": {"zero": false},
+              "title": "Life expectancy at birth (years)"
+            }
+          },
+          "title": "Life expectancy over time"
+        },
+        {
+          "data": {"name": "data-1a3466750ebf7806135890a0a92ffa89"},
+          "mark": "circle",
+          "encoding": {
+            "color": {"type": "nominal", "field": "Country"},
+            "tooltip": [
+              {"type": "nominal", "field": "Country"},
+              {"type": "quantitative", "field": "Year"},
+              {"type": "quantitative", "field": "Life expectancy (years)"}
+            ],
+            "x": {"type": "ordinal", "field": "Year"},
+            "y": {
+              "type": "quantitative",
+              "field": "Life expectancy (years)",
+              "scale": {"zero": false},
+              "title": "Life expectancy at birth (years)"
+            }
+          },
+          "title": "Life expectancy over time"
+        }
+      ],
+      "width": 120
+    },
+    {
+      "layer": [
+        {
+          "layer": [
+            {
+              "data": {"name": "data-51f1e32e573981ce818d43923bf7c81e"},
+              "mark": "line",
+              "encoding": {
+                "color": {"type": "nominal", "field": "Country"},
+                "order": {"type": "quantitative", "field": "Year"},
+                "tooltip": [
+                  {"type": "nominal", "field": "Country"},
+                  {"type": "quantitative", "field": "Value", "title": "% GDP"},
+                  {"type": "quantitative", "field": "Life expectancy (years)"},
+                  {"type": "quantitative", "field": "Year"}
+                ],
+                "x": {
+                  "type": "quantitative",
+                  "field": "Value",
+                  "title": "% GDP spent on healthcare"
+                },
+                "y": {
+                  "type": "quantitative",
+                  "field": "Life expectancy (years)",
+                  "scale": {"domain": [76, 84]},
+                  "title": null
+                }
+              },
+              "title": "Life expectancy vs. healthcare expenditures (2000-2015 OECD data)"
+            },
+            {
+              "data": {"name": "data-51f1e32e573981ce818d43923bf7c81e"},
+              "mark": "circle",
+              "encoding": {
+                "color": {"type": "nominal", "field": "Country"},
+                "order": {"type": "quantitative", "field": "Year"},
+                "size": {
+                  "type": "ordinal",
+                  "field": "Year",
+                  "legend": null,
+                  "scale": {"range": [30, 60]}
+                },
+                "tooltip": [
+                  {"type": "nominal", "field": "Country"},
+                  {"type": "quantitative", "field": "Value", "title": "% GDP"},
+                  {"type": "quantitative", "field": "Life expectancy (years)"},
+                  {"type": "quantitative", "field": "Year"}
+                ],
+                "x": {
+                  "type": "quantitative",
+                  "field": "Value",
+                  "title": "% GDP spent on healthcare"
+                },
+                "y": {
+                  "type": "quantitative",
+                  "field": "Life expectancy (years)",
+                  "scale": {"domain": [76, 84]},
+                  "title": null
+                }
+              },
+              "title": "Life expectancy vs. healthcare expenditures (2000-2015 OECD data)"
+            }
+          ]
+        },
+        {
+          "layer": [
+            {
+              "data": {"name": "data-1bc533c5a1f870b12bcef174aa1fc57f"},
+              "mark": "line",
+              "encoding": {
+                "color": {"type": "nominal", "field": "Country"},
+                "order": {"type": "quantitative", "field": "Year"},
+                "tooltip": [
+                  {"type": "nominal", "field": "Country"},
+                  {"type": "quantitative", "field": "Value", "title": "% GDP"},
+                  {"type": "quantitative", "field": "Life expectancy (years)"},
+                  {"type": "quantitative", "field": "Year"}
+                ],
+                "x": {
+                  "type": "quantitative",
+                  "field": "Value",
+                  "title": "% GDP spent on healthcare"
+                },
+                "y": {
+                  "type": "quantitative",
+                  "field": "Life expectancy (years)",
+                  "scale": {"domain": [76, 84]},
+                  "title": null
+                }
+              },
+              "title": "Life expectancy vs. healthcare expenditures (2000-2015 OECD data)"
+            },
+            {
+              "data": {"name": "data-1bc533c5a1f870b12bcef174aa1fc57f"},
+              "mark": "circle",
+              "encoding": {
+                "color": {"type": "nominal", "field": "Country"},
+                "order": {"type": "quantitative", "field": "Year"},
+                "size": {
+                  "type": "ordinal",
+                  "field": "Year",
+                  "legend": null,
+                  "scale": {"range": [30, 60]}
+                },
+                "tooltip": [
+                  {"type": "nominal", "field": "Country"},
+                  {"type": "quantitative", "field": "Value", "title": "% GDP"},
+                  {"type": "quantitative", "field": "Life expectancy (years)"},
+                  {"type": "quantitative", "field": "Year"}
+                ],
+                "x": {
+                  "type": "quantitative",
+                  "field": "Value",
+                  "title": "% GDP spent on healthcare"
+                },
+                "y": {
+                  "type": "quantitative",
+                  "field": "Life expectancy (years)",
+                  "scale": {"domain": [76, 84]},
+                  "title": null
+                }
+              },
+              "title": "Life expectancy vs. healthcare expenditures (2000-2015 OECD data)"
+            }
+          ]
+        },
+        {
+          "layer": [
+            {
+              "data": {"name": "data-2ac523789964bec8f21c4d0d8807c1fa"},
+              "mark": "line",
+              "encoding": {
+                "color": {"type": "nominal", "field": "Country"},
+                "order": {"type": "quantitative", "field": "Year"},
+                "tooltip": [
+                  {"type": "nominal", "field": "Country"},
+                  {"type": "quantitative", "field": "Value", "title": "% GDP"},
+                  {"type": "quantitative", "field": "Life expectancy (years)"},
+                  {"type": "quantitative", "field": "Year"}
+                ],
+                "x": {
+                  "type": "quantitative",
+                  "field": "Value",
+                  "title": "% GDP spent on healthcare"
+                },
+                "y": {
+                  "type": "quantitative",
+                  "field": "Life expectancy (years)",
+                  "scale": {"domain": [76, 84]},
+                  "title": null
+                }
+              },
+              "title": "Life expectancy vs. healthcare expenditures (2000-2015 OECD data)"
+            },
+            {
+              "data": {"name": "data-2ac523789964bec8f21c4d0d8807c1fa"},
+              "mark": "circle",
+              "encoding": {
+                "color": {"type": "nominal", "field": "Country"},
+                "order": {"type": "quantitative", "field": "Year"},
+                "size": {
+                  "type": "ordinal",
+                  "field": "Year",
+                  "legend": null,
+                  "scale": {"range": [30, 60]}
+                },
+                "tooltip": [
+                  {"type": "nominal", "field": "Country"},
+                  {"type": "quantitative", "field": "Value", "title": "% GDP"},
+                  {"type": "quantitative", "field": "Life expectancy (years)"},
+                  {"type": "quantitative", "field": "Year"}
+                ],
+                "x": {
+                  "type": "quantitative",
+                  "field": "Value",
+                  "title": "% GDP spent on healthcare"
+                },
+                "y": {
+                  "type": "quantitative",
+                  "field": "Life expectancy (years)",
+                  "scale": {"domain": [76, 84]},
+                  "title": null
+                }
+              },
+              "title": "Life expectancy vs. healthcare expenditures (2000-2015 OECD data)"
+            }
+          ]
+        },
+        {
+          "layer": [
+            {
+              "data": {"name": "data-2902ba3840acc2010d0b0b2990024abd"},
+              "mark": "line",
+              "encoding": {
+                "color": {"type": "nominal", "field": "Country"},
+                "order": {"type": "quantitative", "field": "Year"},
+                "tooltip": [
+                  {"type": "nominal", "field": "Country"},
+                  {"type": "quantitative", "field": "Value", "title": "% GDP"},
+                  {"type": "quantitative", "field": "Life expectancy (years)"},
+                  {"type": "quantitative", "field": "Year"}
+                ],
+                "x": {
+                  "type": "quantitative",
+                  "field": "Value",
+                  "title": "% GDP spent on healthcare"
+                },
+                "y": {
+                  "type": "quantitative",
+                  "field": "Life expectancy (years)",
+                  "scale": {"domain": [76, 84]},
+                  "title": null
+                }
+              },
+              "title": "Life expectancy vs. healthcare expenditures (2000-2015 OECD data)"
+            },
+            {
+              "data": {"name": "data-2902ba3840acc2010d0b0b2990024abd"},
+              "mark": "circle",
+              "encoding": {
+                "color": {"type": "nominal", "field": "Country"},
+                "order": {"type": "quantitative", "field": "Year"},
+                "size": {
+                  "type": "ordinal",
+                  "field": "Year",
+                  "legend": null,
+                  "scale": {"range": [30, 60]}
+                },
+                "tooltip": [
+                  {"type": "nominal", "field": "Country"},
+                  {"type": "quantitative", "field": "Value", "title": "% GDP"},
+                  {"type": "quantitative", "field": "Life expectancy (years)"},
+                  {"type": "quantitative", "field": "Year"}
+                ],
+                "x": {
+                  "type": "quantitative",
+                  "field": "Value",
+                  "title": "% GDP spent on healthcare"
+                },
+                "y": {
+                  "type": "quantitative",
+                  "field": "Life expectancy (years)",
+                  "scale": {"domain": [76, 84]},
+                  "title": null
+                }
+              },
+              "title": "Life expectancy vs. healthcare expenditures (2000-2015 OECD data)"
+            }
+          ]
+        },
+        {
+          "layer": [
+            {
+              "data": {"name": "data-aad6a118585346b56642884e2639877c"},
+              "mark": "line",
+              "encoding": {
+                "color": {"type": "nominal", "field": "Country"},
+                "order": {"type": "quantitative", "field": "Year"},
+                "tooltip": [
+                  {"type": "nominal", "field": "Country"},
+                  {"type": "quantitative", "field": "Value", "title": "% GDP"},
+                  {"type": "quantitative", "field": "Life expectancy (years)"},
+                  {"type": "quantitative", "field": "Year"}
+                ],
+                "x": {
+                  "type": "quantitative",
+                  "field": "Value",
+                  "title": "% GDP spent on healthcare"
+                },
+                "y": {
+                  "type": "quantitative",
+                  "field": "Life expectancy (years)",
+                  "scale": {"domain": [76, 84]},
+                  "title": null
+                }
+              },
+              "title": "Life expectancy vs. healthcare expenditures (2000-2015 OECD data)"
+            },
+            {
+              "data": {"name": "data-aad6a118585346b56642884e2639877c"},
+              "mark": "circle",
+              "encoding": {
+                "color": {"type": "nominal", "field": "Country"},
+                "order": {"type": "quantitative", "field": "Year"},
+                "size": {
+                  "type": "ordinal",
+                  "field": "Year",
+                  "legend": null,
+                  "scale": {"range": [30, 60]}
+                },
+                "tooltip": [
+                  {"type": "nominal", "field": "Country"},
+                  {"type": "quantitative", "field": "Value", "title": "% GDP"},
+                  {"type": "quantitative", "field": "Life expectancy (years)"},
+                  {"type": "quantitative", "field": "Year"}
+                ],
+                "x": {
+                  "type": "quantitative",
+                  "field": "Value",
+                  "title": "% GDP spent on healthcare"
+                },
+                "y": {
+                  "type": "quantitative",
+                  "field": "Life expectancy (years)",
+                  "scale": {"domain": [76, 84]},
+                  "title": null
+                }
+              },
+              "title": "Life expectancy vs. healthcare expenditures (2000-2015 OECD data)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "$schema": "https://vega.github.io/schema/vega-lite/v2.6.0.json",
+  "datasets": {
+    "data-1a3466750ebf7806135890a0a92ffa89": [
+      {"Country": "Canada", "Year": 2000, "Life expectancy (years)": 79},
+      {"Country": "Canada", "Year": 2001, "Life expectancy (years)": 79.2},
+      {"Country": "Canada", "Year": 2002, "Life expectancy (years)": 79.4},
+      {"Country": "Canada", "Year": 2003, "Life expectancy (years)": 79.6},
+      {"Country": "Canada", "Year": 2004, "Life expectancy (years)": 79.8},
+      {"Country": "Canada", "Year": 2005, "Life expectancy (years)": 80},
+      {"Country": "Canada", "Year": 2006, "Life expectancy (years)": 80.3},
+      {"Country": "Canada", "Year": 2007, "Life expectancy (years)": 80.4},
+      {"Country": "Canada", "Year": 2008, "Life expectancy (years)": 80.6},
+      {"Country": "Canada", "Year": 2009, "Life expectancy (years)": 80.8},
+      {"Country": "Canada", "Year": 2010, "Life expectancy (years)": 81.1},
+      {"Country": "Canada", "Year": 2011, "Life expectancy (years)": 81.3},
+      {"Country": "Canada", "Year": 2012, "Life expectancy (years)": 81.5},
+      {"Country": "Canada", "Year": 2013, "Life expectancy (years)": 81.7},
+      {"Country": "Canada", "Year": 2014, "Life expectancy (years)": 81.8},
+      {"Country": "Canada", "Year": 2015, "Life expectancy (years)": 81.9},
+      {"Country": "Germany", "Year": 2000, "Life expectancy (years)": 78.2},
+      {"Country": "Germany", "Year": 2001, "Life expectancy (years)": 78.5},
+      {"Country": "Germany", "Year": 2002, "Life expectancy (years)": 78.5},
+      {"Country": "Germany", "Year": 2003, "Life expectancy (years)": 78.6},
+      {"Country": "Germany", "Year": 2004, "Life expectancy (years)": 79.2},
+      {"Country": "Germany", "Year": 2005, "Life expectancy (years)": 79.4},
+      {"Country": "Germany", "Year": 2006, "Life expectancy (years)": 79.8},
+      {"Country": "Germany", "Year": 2007, "Life expectancy (years)": 80.1},
+      {"Country": "Germany", "Year": 2008, "Life expectancy (years)": 80.2},
+      {"Country": "Germany", "Year": 2009, "Life expectancy (years)": 80.3},
+      {"Country": "Germany", "Year": 2010, "Life expectancy (years)": 80.5},
+      {"Country": "Germany", "Year": 2011, "Life expectancy (years)": 80.5},
+      {"Country": "Germany", "Year": 2012, "Life expectancy (years)": 80.6},
+      {"Country": "Germany", "Year": 2013, "Life expectancy (years)": 80.6},
+      {"Country": "Germany", "Year": 2014, "Life expectancy (years)": 81.2},
+      {"Country": "Germany", "Year": 2015, "Life expectancy (years)": 80.7},
+      {"Country": "Japan", "Year": 2000, "Life expectancy (years)": 81.2},
+      {"Country": "Japan", "Year": 2001, "Life expectancy (years)": 81.5},
+      {"Country": "Japan", "Year": 2002, "Life expectancy (years)": 81.8},
+      {"Country": "Japan", "Year": 2003, "Life expectancy (years)": 81.8},
+      {"Country": "Japan", "Year": 2004, "Life expectancy (years)": 82.1},
+      {"Country": "Japan", "Year": 2005, "Life expectancy (years)": 82},
+      {"Country": "Japan", "Year": 2006, "Life expectancy (years)": 82.4},
+      {"Country": "Japan", "Year": 2007, "Life expectancy (years)": 82.6},
+      {"Country": "Japan", "Year": 2008, "Life expectancy (years)": 82.7},
+      {"Country": "Japan", "Year": 2009, "Life expectancy (years)": 83},
+      {"Country": "Japan", "Year": 2010, "Life expectancy (years)": 82.9},
+      {"Country": "Japan", "Year": 2011, "Life expectancy (years)": 82.7},
+      {"Country": "Japan", "Year": 2012, "Life expectancy (years)": 83.2},
+      {"Country": "Japan", "Year": 2013, "Life expectancy (years)": 83.4},
+      {"Country": "Japan", "Year": 2014, "Life expectancy (years)": 83.7},
+      {"Country": "Japan", "Year": 2015, "Life expectancy (years)": 83.9},
+      {
+        "Country": "United Kingdom",
+        "Year": 2000,
+        "Life expectancy (years)": 77.9
+      },
+      {
+        "Country": "United Kingdom",
+        "Year": 2001,
+        "Life expectancy (years)": 78.2
+      },
+      {
+        "Country": "United Kingdom",
+        "Year": 2002,
+        "Life expectancy (years)": 78.3
+      },
+      {
+        "Country": "United Kingdom",
+        "Year": 2003,
+        "Life expectancy (years)": 78.4
+      },
+      {
+        "Country": "United Kingdom",
+        "Year": 2004,
+        "Life expectancy (years)": 79
+      },
+      {
+        "Country": "United Kingdom",
+        "Year": 2005,
+        "Life expectancy (years)": 79.2
+      },
+      {
+        "Country": "United Kingdom",
+        "Year": 2006,
+        "Life expectancy (years)": 79.5
+      },
+      {
+        "Country": "United Kingdom",
+        "Year": 2007,
+        "Life expectancy (years)": 79.7
+      },
+      {
+        "Country": "United Kingdom",
+        "Year": 2008,
+        "Life expectancy (years)": 79.8
+      },
+      {
+        "Country": "United Kingdom",
+        "Year": 2009,
+        "Life expectancy (years)": 80.4
+      },
+      {
+        "Country": "United Kingdom",
+        "Year": 2010,
+        "Life expectancy (years)": 80.6
+      },
+      {
+        "Country": "United Kingdom",
+        "Year": 2011,
+        "Life expectancy (years)": 81
+      },
+      {
+        "Country": "United Kingdom",
+        "Year": 2012,
+        "Life expectancy (years)": 81
+      },
+      {
+        "Country": "United Kingdom",
+        "Year": 2013,
+        "Life expectancy (years)": 81.1
+      },
+      {
+        "Country": "United Kingdom",
+        "Year": 2014,
+        "Life expectancy (years)": 81.4
+      },
+      {
+        "Country": "United Kingdom",
+        "Year": 2015,
+        "Life expectancy (years)": 81
+      },
+      {
+        "Country": "United States",
+        "Year": 2000,
+        "Life expectancy (years)": 76.7
+      },
+      {
+        "Country": "United States",
+        "Year": 2001,
+        "Life expectancy (years)": 76.9
+      },
+      {"Country": "United States", "Year": 2002, "Life expectancy (years)": 77},
+      {
+        "Country": "United States",
+        "Year": 2003,
+        "Life expectancy (years)": 77.1
+      },
+      {
+        "Country": "United States",
+        "Year": 2004,
+        "Life expectancy (years)": 77.6
+      },
+      {
+        "Country": "United States",
+        "Year": 2005,
+        "Life expectancy (years)": 77.6
+      },
+      {
+        "Country": "United States",
+        "Year": 2006,
+        "Life expectancy (years)": 77.8
+      },
+      {
+        "Country": "United States",
+        "Year": 2007,
+        "Life expectancy (years)": 78.1
+      },
+      {
+        "Country": "United States",
+        "Year": 2008,
+        "Life expectancy (years)": 78.1
+      },
+      {
+        "Country": "United States",
+        "Year": 2009,
+        "Life expectancy (years)": 78.5
+      },
+      {
+        "Country": "United States",
+        "Year": 2010,
+        "Life expectancy (years)": 78.6
+      },
+      {
+        "Country": "United States",
+        "Year": 2011,
+        "Life expectancy (years)": 78.7
+      },
+      {
+        "Country": "United States",
+        "Year": 2012,
+        "Life expectancy (years)": 78.8
+      },
+      {
+        "Country": "United States",
+        "Year": 2013,
+        "Life expectancy (years)": 78.8
+      },
+      {
+        "Country": "United States",
+        "Year": 2014,
+        "Life expectancy (years)": 78.9
+      },
+      {
+        "Country": "United States",
+        "Year": 2015,
+        "Life expectancy (years)": 78.7
+      }
+    ],
+    "data-51f1e32e573981ce818d43923bf7c81e": [
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "United States",
+        "Year": 2000,
+        "Unit": "Percentage",
+        "Value": 12.502,
+        "Life expectancy (years)": 76.7,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": null,
+        "Region": "Americas"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "United States",
+        "Year": 2001,
+        "Unit": "Percentage",
+        "Value": 13.169,
+        "Life expectancy (years)": 76.9,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": null,
+        "Region": "Americas"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "United States",
+        "Year": 2002,
+        "Unit": "Percentage",
+        "Value": 13.954,
+        "Life expectancy (years)": 77,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": null,
+        "Region": "Americas"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "United States",
+        "Year": 2003,
+        "Unit": "Percentage",
+        "Value": 14.455,
+        "Life expectancy (years)": 77.1,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": null,
+        "Region": "Americas"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "United States",
+        "Year": 2004,
+        "Unit": "Percentage",
+        "Value": 14.537,
+        "Life expectancy (years)": 77.6,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": null,
+        "Region": "Americas"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "United States",
+        "Year": 2005,
+        "Unit": "Percentage",
+        "Value": 14.541,
+        "Life expectancy (years)": 77.6,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 6.9,
+        "Region": "Americas"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "United States",
+        "Year": 2006,
+        "Unit": "Percentage",
+        "Value": 14.658,
+        "Life expectancy (years)": 77.8,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 6.7,
+        "Region": "Americas"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "United States",
+        "Year": 2007,
+        "Unit": "Percentage",
+        "Value": 14.898,
+        "Life expectancy (years)": 78.1,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 6.8,
+        "Region": "Americas"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "United States",
+        "Year": 2008,
+        "Unit": "Percentage",
+        "Value": 15.294,
+        "Life expectancy (years)": 78.1,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 6.6,
+        "Region": "Americas"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "United States",
+        "Year": 2009,
+        "Unit": "Percentage",
+        "Value": 16.343,
+        "Life expectancy (years)": 78.5,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 6.4,
+        "Region": "Americas"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "United States",
+        "Year": 2010,
+        "Unit": "Percentage",
+        "Value": 16.413,
+        "Life expectancy (years)": 78.6,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 6.1,
+        "Region": "Americas"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "United States",
+        "Year": 2011,
+        "Unit": "Percentage",
+        "Value": 16.367,
+        "Life expectancy (years)": 78.7,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 6.1,
+        "Region": "Americas"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "United States",
+        "Year": 2012,
+        "Unit": "Percentage",
+        "Value": 16.366,
+        "Life expectancy (years)": 78.8,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 6,
+        "Region": "Americas"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "United States",
+        "Year": 2013,
+        "Unit": "Percentage",
+        "Value": 16.331,
+        "Life expectancy (years)": 78.8,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 6,
+        "Region": "Americas"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "United States",
+        "Year": 2014,
+        "Unit": "Percentage",
+        "Value": 16.505,
+        "Life expectancy (years)": 78.9,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 5.8,
+        "Region": "Americas"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "United States",
+        "Year": 2015,
+        "Unit": "Percentage",
+        "Value": 16.816,
+        "Life expectancy (years)": 78.7,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 5.9,
+        "Region": "Americas"
+      }
+    ],
+    "data-1bc533c5a1f870b12bcef174aa1fc57f": [
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "United Kingdom",
+        "Year": 2000,
+        "Unit": "Percentage",
+        "Value": 5.972,
+        "Life expectancy (years)": 77.9,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": null,
+        "Region": "Europe & Central Asia"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "United Kingdom",
+        "Year": 2001,
+        "Unit": "Percentage",
+        "Value": 6.329,
+        "Life expectancy (years)": 78.2,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": null,
+        "Region": "Europe & Central Asia"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "United Kingdom",
+        "Year": 2002,
+        "Unit": "Percentage",
+        "Value": 6.5870000000000015,
+        "Life expectancy (years)": 78.3,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": null,
+        "Region": "Europe & Central Asia"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "United Kingdom",
+        "Year": 2003,
+        "Unit": "Percentage",
+        "Value": 6.851,
+        "Life expectancy (years)": 78.4,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": null,
+        "Region": "Europe & Central Asia"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "United Kingdom",
+        "Year": 2004,
+        "Unit": "Percentage",
+        "Value": 7.051,
+        "Life expectancy (years)": 79,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": null,
+        "Region": "Europe & Central Asia"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "United Kingdom",
+        "Year": 2005,
+        "Unit": "Percentage",
+        "Value": 7.187,
+        "Life expectancy (years)": 79.2,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 5.1,
+        "Region": "Europe & Central Asia"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "United Kingdom",
+        "Year": 2006,
+        "Unit": "Percentage",
+        "Value": 7.327000000000001,
+        "Life expectancy (years)": 79.5,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 4.9,
+        "Region": "Europe & Central Asia"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "United Kingdom",
+        "Year": 2007,
+        "Unit": "Percentage",
+        "Value": 7.432,
+        "Life expectancy (years)": 79.7,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 4.7,
+        "Region": "Europe & Central Asia"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "United Kingdom",
+        "Year": 2008,
+        "Unit": "Percentage",
+        "Value": 7.681,
+        "Life expectancy (years)": 79.8,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 4.6,
+        "Region": "Europe & Central Asia"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "United Kingdom",
+        "Year": 2009,
+        "Unit": "Percentage",
+        "Value": 8.527000000000001,
+        "Life expectancy (years)": 80.4,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 4.5,
+        "Region": "Europe & Central Asia"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "United Kingdom",
+        "Year": 2010,
+        "Unit": "Percentage",
+        "Value": 8.474,
+        "Life expectancy (years)": 80.6,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 4.2,
+        "Region": "Europe & Central Asia"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "United Kingdom",
+        "Year": 2011,
+        "Unit": "Percentage",
+        "Value": 8.422,
+        "Life expectancy (years)": 81,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 4.2,
+        "Region": "Europe & Central Asia"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "United Kingdom",
+        "Year": 2012,
+        "Unit": "Percentage",
+        "Value": 8.339,
+        "Life expectancy (years)": 81,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 4,
+        "Region": "Europe & Central Asia"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "United Kingdom",
+        "Year": 2013,
+        "Unit": "Percentage",
+        "Value": 9.772,
+        "Life expectancy (years)": 81.1,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 3.9,
+        "Region": "Europe & Central Asia"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "United Kingdom",
+        "Year": 2014,
+        "Unit": "Percentage",
+        "Value": 9.724,
+        "Life expectancy (years)": 81.4,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 3.9,
+        "Region": "Europe & Central Asia"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "United Kingdom",
+        "Year": 2015,
+        "Unit": "Percentage",
+        "Value": 9.793,
+        "Life expectancy (years)": 81,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 3.9,
+        "Region": "Europe & Central Asia"
+      }
+    ],
+    "data-2ac523789964bec8f21c4d0d8807c1fa": [
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "Germany",
+        "Year": 2000,
+        "Unit": "Percentage",
+        "Value": 9.828,
+        "Life expectancy (years)": 78.2,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": null,
+        "Region": "Europe & Central Asia"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "Germany",
+        "Year": 2001,
+        "Unit": "Percentage",
+        "Value": 9.864,
+        "Life expectancy (years)": 78.5,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": null,
+        "Region": "Europe & Central Asia"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "Germany",
+        "Year": 2002,
+        "Unit": "Percentage",
+        "Value": 10.11,
+        "Life expectancy (years)": 78.5,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": null,
+        "Region": "Europe & Central Asia"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "Germany",
+        "Year": 2003,
+        "Unit": "Percentage",
+        "Value": 10.332,
+        "Life expectancy (years)": 78.6,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": null,
+        "Region": "Europe & Central Asia"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "Germany",
+        "Year": 2004,
+        "Unit": "Percentage",
+        "Value": 10.076,
+        "Life expectancy (years)": 79.2,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": null,
+        "Region": "Europe & Central Asia"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "Germany",
+        "Year": 2005,
+        "Unit": "Percentage",
+        "Value": 10.225,
+        "Life expectancy (years)": 79.4,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 3.9,
+        "Region": "Europe & Central Asia"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "Germany",
+        "Year": 2006,
+        "Unit": "Percentage",
+        "Value": 10.113,
+        "Life expectancy (years)": 79.8,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 3.8,
+        "Region": "Europe & Central Asia"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "Germany",
+        "Year": 2007,
+        "Unit": "Percentage",
+        "Value": 9.969,
+        "Life expectancy (years)": 80.1,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 3.9,
+        "Region": "Europe & Central Asia"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "Germany",
+        "Year": 2008,
+        "Unit": "Percentage",
+        "Value": 10.155,
+        "Life expectancy (years)": 80.2,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 3.5,
+        "Region": "Europe & Central Asia"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "Germany",
+        "Year": 2009,
+        "Unit": "Percentage",
+        "Value": 11.137,
+        "Life expectancy (years)": 80.3,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 3.5,
+        "Region": "Europe & Central Asia"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "Germany",
+        "Year": 2010,
+        "Unit": "Percentage",
+        "Value": 11.004,
+        "Life expectancy (years)": 80.5,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 3.4,
+        "Region": "Europe & Central Asia"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "Germany",
+        "Year": 2011,
+        "Unit": "Percentage",
+        "Value": 10.715,
+        "Life expectancy (years)": 80.5,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 3.6,
+        "Region": "Europe & Central Asia"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "Germany",
+        "Year": 2012,
+        "Unit": "Percentage",
+        "Value": 10.767,
+        "Life expectancy (years)": 80.6,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 3.3,
+        "Region": "Europe & Central Asia"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "Germany",
+        "Year": 2013,
+        "Unit": "Percentage",
+        "Value": 10.915,
+        "Life expectancy (years)": 80.6,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 3.3,
+        "Region": "Europe & Central Asia"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "Germany",
+        "Year": 2014,
+        "Unit": "Percentage",
+        "Value": 10.957,
+        "Life expectancy (years)": 81.2,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 3.2,
+        "Region": "Europe & Central Asia"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "Germany",
+        "Year": 2015,
+        "Unit": "Percentage",
+        "Value": 11.079,
+        "Life expectancy (years)": 80.7,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 3.3,
+        "Region": "Europe & Central Asia"
+      }
+    ],
+    "data-2902ba3840acc2010d0b0b2990024abd": [
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "Canada",
+        "Year": 2000,
+        "Unit": "Percentage",
+        "Value": 8.276,
+        "Life expectancy (years)": 79,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": null,
+        "Region": "Americas"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "Canada",
+        "Year": 2001,
+        "Unit": "Percentage",
+        "Value": 8.655,
+        "Life expectancy (years)": 79.2,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": null,
+        "Region": "Americas"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "Canada",
+        "Year": 2002,
+        "Unit": "Percentage",
+        "Value": 8.888,
+        "Life expectancy (years)": 79.4,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": null,
+        "Region": "Americas"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "Canada",
+        "Year": 2003,
+        "Unit": "Percentage",
+        "Value": 9.043,
+        "Life expectancy (years)": 79.6,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": null,
+        "Region": "Americas"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "Canada",
+        "Year": 2004,
+        "Unit": "Percentage",
+        "Value": 9.097,
+        "Life expectancy (years)": 79.8,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": null,
+        "Region": "Americas"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "Canada",
+        "Year": 2005,
+        "Unit": "Percentage",
+        "Value": 9.064,
+        "Life expectancy (years)": 80,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 5.4,
+        "Region": "Americas"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "Canada",
+        "Year": 2006,
+        "Unit": "Percentage",
+        "Value": 9.207,
+        "Life expectancy (years)": 80.3,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 5,
+        "Region": "Americas"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "Canada",
+        "Year": 2007,
+        "Unit": "Percentage",
+        "Value": 9.298,
+        "Life expectancy (years)": 80.4,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 5.1,
+        "Region": "Americas"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "Canada",
+        "Year": 2008,
+        "Unit": "Percentage",
+        "Value": 9.465,
+        "Life expectancy (years)": 80.6,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 5.1,
+        "Region": "Americas"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "Canada",
+        "Year": 2009,
+        "Unit": "Percentage",
+        "Value": 10.574000000000002,
+        "Life expectancy (years)": 80.8,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 4.9,
+        "Region": "Americas"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "Canada",
+        "Year": 2010,
+        "Unit": "Percentage",
+        "Value": 10.556,
+        "Life expectancy (years)": 81.1,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 5,
+        "Region": "Americas"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "Canada",
+        "Year": 2011,
+        "Unit": "Percentage",
+        "Value": 10.23,
+        "Life expectancy (years)": 81.3,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 4.9,
+        "Region": "Americas"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "Canada",
+        "Year": 2012,
+        "Unit": "Percentage",
+        "Value": 10.24,
+        "Life expectancy (years)": 81.5,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 4.8,
+        "Region": "Americas"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "Canada",
+        "Year": 2013,
+        "Unit": "Percentage",
+        "Value": 10.133,
+        "Life expectancy (years)": 81.7,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 5,
+        "Region": "Americas"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "Canada",
+        "Year": 2014,
+        "Unit": "Percentage",
+        "Value": 9.97,
+        "Life expectancy (years)": 81.8,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 4.7,
+        "Region": "Americas"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "Canada",
+        "Year": 2015,
+        "Unit": "Percentage",
+        "Value": 10.377,
+        "Life expectancy (years)": 81.9,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": null,
+        "Region": "Americas"
+      }
+    ],
+    "data-aad6a118585346b56642884e2639877c": [
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "Japan",
+        "Year": 2000,
+        "Unit": "Percentage",
+        "Value": 7.151,
+        "Life expectancy (years)": 81.2,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": null,
+        "Region": "East Asia & Pacific"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "Japan",
+        "Year": 2001,
+        "Unit": "Percentage",
+        "Value": 7.359,
+        "Life expectancy (years)": 81.5,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": null,
+        "Region": "East Asia & Pacific"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "Japan",
+        "Year": 2002,
+        "Unit": "Percentage",
+        "Value": 7.473,
+        "Life expectancy (years)": 81.8,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": null,
+        "Region": "East Asia & Pacific"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "Japan",
+        "Year": 2003,
+        "Unit": "Percentage",
+        "Value": 7.6110000000000015,
+        "Life expectancy (years)": 81.8,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": null,
+        "Region": "East Asia & Pacific"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "Japan",
+        "Year": 2004,
+        "Unit": "Percentage",
+        "Value": 7.657,
+        "Life expectancy (years)": 82.1,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": null,
+        "Region": "East Asia & Pacific"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "Japan",
+        "Year": 2005,
+        "Unit": "Percentage",
+        "Value": 7.7810000000000015,
+        "Life expectancy (years)": 82,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 2.8,
+        "Region": "East Asia & Pacific"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "Japan",
+        "Year": 2006,
+        "Unit": "Percentage",
+        "Value": 7.808,
+        "Life expectancy (years)": 82.4,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 2.6,
+        "Region": "East Asia & Pacific"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "Japan",
+        "Year": 2007,
+        "Unit": "Percentage",
+        "Value": 7.89,
+        "Life expectancy (years)": 82.6,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 2.6,
+        "Region": "East Asia & Pacific"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "Japan",
+        "Year": 2008,
+        "Unit": "Percentage",
+        "Value": 8.2,
+        "Life expectancy (years)": 82.7,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 2.6,
+        "Region": "East Asia & Pacific"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "Japan",
+        "Year": 2009,
+        "Unit": "Percentage",
+        "Value": 9.058,
+        "Life expectancy (years)": 83,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 2.4,
+        "Region": "East Asia & Pacific"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "Japan",
+        "Year": 2010,
+        "Unit": "Percentage",
+        "Value": 9.157,
+        "Life expectancy (years)": 82.9,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 2.3,
+        "Region": "East Asia & Pacific"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "Japan",
+        "Year": 2011,
+        "Unit": "Percentage",
+        "Value": 10.617,
+        "Life expectancy (years)": 82.7,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 2.3,
+        "Region": "East Asia & Pacific"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "Japan",
+        "Year": 2012,
+        "Unit": "Percentage",
+        "Value": 10.791,
+        "Life expectancy (years)": 83.2,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 2.2,
+        "Region": "East Asia & Pacific"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "Japan",
+        "Year": 2013,
+        "Unit": "Percentage",
+        "Value": 10.792,
+        "Life expectancy (years)": 83.4,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 2.1,
+        "Region": "East Asia & Pacific"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "Japan",
+        "Year": 2014,
+        "Unit": "Percentage",
+        "Value": 10.832,
+        "Life expectancy (years)": 83.7,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 2.1,
+        "Region": "East Asia & Pacific"
+      },
+      {
+        "Financing scheme": "All financing schemes",
+        "Function": "Current expenditure on health (all functions)",
+        "Provider": "All providers",
+        "Measure": "Share of gross domestic product",
+        "Country": "Japan",
+        "Year": 2015,
+        "Unit": "Percentage",
+        "Value": 10.872,
+        "Life expectancy (years)": 83.9,
+        "ComparisonCountry": true,
+        "Infant mortality (per 1000 live births)": 1.9,
+        "Region": "East Asia & Pacific"
+      }
+    ]
+  }
+}
                     var opt = {"renderer": "canvas", "actions": false};  /* Options for the embedding */
                     vegaEmbed("#vis", spec, opt);
 </script>
@@ -2069,4 +1810,4 @@ The PCMH model quite literally extends to patients’ own homes in the context o
 ## References
 Bodenheimer, T., & Grumbach, Kevin. (2016). Understanding health policy: A clinical approach (Seventh ed., McGraw-Hill's AccessMedicine). New York: McGraw-Hill Education.
 
-Himmelstein  DU  et al Medical bankruptcy in the United States, 2007. results of a national study. Am J Med. 2009;122:741–746.
+Himmelstein, Thorne, Warren, & Woolhandler. (2009). Medical Bankruptcy in the United States, 2007: Results of a National Study. The American Journal of Medicine, 122(8), 741-746.
