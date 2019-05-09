@@ -20,6 +20,7 @@ While the landscape of EHR systems is still changing and reacting to new discove
  
 Check out this infographic detailing some of the points discussed above about EHR adoption:
 <img src='https://www.vertitechit.com/wp-content/uploads/2018/03/History-of-Health-Technology-min.jpg'>
+(Image Source: VertitechIT, https://www.vertitechit.com/history-healthcare-technology/)
 
 ## What are advantages and disadvantages of EHR Systems?
 Many of the advantages and disadvantages of EHR systems are common to all information technology systems. To mention just a few:
