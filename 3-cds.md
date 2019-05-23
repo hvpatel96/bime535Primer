@@ -30,10 +30,10 @@ A Computerized Provider Order Entry (CPOE) is a system in which clinicians place
  
 Historically, prescribing and administrating medications involves the following steps:
  
-·       Ordering: Where the clinicians choose the appropriate medication, dose, and administration frequency.
-·       Transcribing: Where the prescription must be read and understood by the recipient, especially if it is handwritten.
-·       Dispensing: Where the pharmacist checks for allergies and drug-drug interactions before releasing the appropriate quantity of the medication.
-·       Administration: Where the correct patient must receive the correct medication in the correct dosage at the right time. This step is usually done by nurses.
+1. Ordering: Where the clinicians choose the appropriate medication, dose, and administration frequency.
+2. Transcribing: Where the prescription must be read and understood by the recipient, especially if it is handwritten.
+3. Dispensing: Where the pharmacist checks for allergies and drug-drug interactions before releasing the appropriate quantity of the medication.
+4. Administration: Where the correct patient must receive the correct medication in the correct dosage at the right time. This step is usually done by nurses.
  
 Similar steps are followed for prescribing laboratory or imaging orders. In all of these cases, the majority of errors occur in the ordering and transcribing steps due to a variety of reasons like poor handwriting, ambiguous abbreviations, incompleteness, or lack of knowledge. Using a CPOE prevents those errors by standardizing providers’ orders in a legible a complete format. In addition, it provides EHR integration and improves efficiency by saving time in order entry and retrieval. Since CPOE technology usually includes built-in CDS tools, it can check for a drug-drug interaction, allergies, and make suggestions for values of drug dosages, routes of administration and frequencies. Sophisticated CDS tools can even prevent omission of certain tests or procedures for a certain condition. Even though CPOE adds several benefits to the organization, it cannot prevent errors that occur during dispensing or administration stages or when clinicians bypass safety steps for entering and processing unsafe orders.
 
