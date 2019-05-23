@@ -57,13 +57,11 @@ U.S. Department of Health and Human Services. (n.d.). Computerized Provider Orde
 What is computerized provider order entry? | HealthIT.gov. (n.d.). Retrieved May 19, 2019, from https://www.healthit.gov/faq/what-computerized-provider-order-entry
 Luger, G. F. (2005). Artificial intelligence: structures and strategies for complex problem solving. Pearson education.
 
-
-## What is Clinical Decision Support?
-## What is CPOE and how does it relate to CDS?
-## What is the history of CDS?
-## What are some current implementations of CDS?
-## Many Clinical Decision Support systems are currently in use across the country and the world. 
-## What successes and failures have current implementations seen?
-## What are the important issues, benefits, and lessons learned?
-## What are the challenges related to socio-cultural factors?
+# Additional questions:
+What is Clinical Decision Support?
+What are some current implementations of CDS?
+Many Clinical Decision Support systems are currently in use across the country and the world. 
+What successes and failures have current implementations seen?
+What are the important issues, benefits, and lessons learned?
+What are the challenges related to socio-cultural factors?
 
