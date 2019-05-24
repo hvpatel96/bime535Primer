@@ -9,7 +9,7 @@ Electronic Health Record systems (EHRs) are information systems that support the
 4. Access to knowledge resources 
 5. Integrated communication and reporting support 
 
-## What are the key defining points / legislation that drove the mass adoption of EHR systems?
+# What are the key defining points / legislation that drove the mass adoption of EHR systems?
 Electronic Health Records, or EHRs, are the cornerstone of almost any healthcare system in use today across the United States and around the world. However, many social, financial, and political factors played important roles in the creation and mass adoption of these systems. In this chapter, we aim to discuss the history behind EHRs, their benefits and challenges, the key EHR actors and what roles they play in the healthcare ecosystem, change management, the blessings and curses of the “Tower of Babel” EHR system, and the history of usability testing of widely used EHR systems.
  
 Data management systems in the medical field have been in use as early as the 1960s, with the earliest working electronic medical record being developed in 1972 by the Regenstrief Institute. However, early challenges in computing, data storage, and high costs of development greatly hindered the use of these systems in regular clinical care. It was not until the 1990s, when affordable personal computers and the Internet emerged, that development of EHR systems truly began. One of the key factors in jumpstarting this development was the Institute of Medicine (IOM) publication on the need for computerized medical records (“Computer-Based Patient Record”, 1991). In the publication, the IOM outlined the eight core functions needed to be developed for a successful EHR system. These functions include health information and data, result management, order management, decision support, electronic communication and connectivity, patient support, administrative processes and reporting, and reporting and population health. This report, in conjunction with the Health Information Portability and Accountability Act of 1996, really laid the foundations for the modern electronic health record ecosystem.
@@ -22,7 +22,7 @@ Check out this infographic detailing some of the points discussed above about EH
 <img src='https://www.vertitechit.com/wp-content/uploads/2018/03/History-of-Health-Technology-min.jpg'>
 Image Source: VertitechIT, https://www.vertitechit.com/history-healthcare-technology/
 
-## What are advantages and disadvantages of EHR Systems?
+# What are advantages and disadvantages of EHR Systems?
 Many of the advantages and disadvantages of EHR systems are common to all information technology systems. To mention just a few:
 
 Typed text does not suffer from the same readability issues that handwriting may be subject to, it is much easier to edit and reorganize, and it can be printed if a hard copy is desired. Electronic text is also searchable. On the other hand, typing on a computer keyboard is a skill that must first be learned (Shortliffe E. & Cimino J., 2014; Gawande, 2019).
@@ -35,7 +35,7 @@ In addition to the benefits and challenges that are common to all information sy
 
 On the other hand, the idea of integrating computers into healthcare delivery and management processes also comes with tremendous opportunities. By eliminating the inefficiencies of paper records, automation can save an immense amount of time in the long run, and help care providers focus on theirs patients instead. By automating large parts of workflows, opportunities for human error are removed. Patients can view and manage their health information online, contributing to patient satisfaction. Clinical decision support tools enabled by the digitization of health information can make practicing evidence-based medicine much easier with the evidence right at the care providers’ fingertips. In addition, analytics and predictive modeling open up a whole new world of potential benefits. Scheduling inefficiencies and wasteful practices can be discovered and fixed. Root causes of bad outcomes can be determined and addressed. Patient outcomes can be improved through clinical decision support by way of predictive models, such as early warning systems and patient classification models. These and many other ways to improve health care would not be possible without electronic health record systems. Many of these opportunities are yet to be developed and broadly operationalized, and the biomedical and health informatics students of today will be integral in making them happen.
 
-## How do different stakeholders contribute to the operation and configuration of EHRs, and what challenges do they each face?
+# How do different stakeholders contribute to the operation and configuration of EHRs, and what challenges do they each face?
 
 <center><img src='images/image2.jpg' width="500"></center>
 
@@ -49,7 +49,7 @@ Once an EHR system is chosen, healthcare providers and/or management are also re
 
 Overall, competing interests of stakeholders in the EHR creation, acquisition and implementation process contribute significantly to major issues with current EHR systems in practice.
 
-## What is change management and why is it important for EHR implementation?
+# What is change management and why is it important for EHR implementation?
 
 The Change Management Learning Center defines change management as a multi-step change model centered on the belief that any change has an emotional and situational component where a set of tools, processes, skills, and principles are used to achieve the required outcomes of a change project or initiative. In healthcare, change management is used for evolving into a model that uses technology for safety, quality, and efficient patient care services that comply with regulatory specifications and requirements. Change management depends on three main major changes that need to happen in the organization:
 
@@ -75,7 +75,7 @@ _Phase 3: Implementing and Sustaining the Change_
 
 The focus in this phase is to monitor the guiding team and ensure that the change endures. Training and retraining, providing technical assistance to the staff, and letting them know how to address problems are key to achieving organizational goals. 
 
-## What are the benefits of a "Tower of Babel" EHR System?
+# What are the benefits of a "Tower of Babel" EHR System?
 
 Interoperability of an EHR system can be defined as the ability of individuals and care providers to easily obtain health information in an electronic format, facilitating convenient, accurate and well-coordinated medical decisions. This will help transform healthcare into a model that addresses health beyond the confines of the health care system and will lead to empowering the patients themselves. This will be possible with a flexible health information technology ecosystem that is able to support transparency and decision-making while reducing redundancy. Achieving this will allow patients to become active participants in their health care, and it can improve the overall health of the population.
  
@@ -93,7 +93,7 @@ Accomplishing an interoperable health IT ecosystem will be achieved by follow gu
  
 To accomplish this, a plan needs to be followed that (1) improves the interoperability of existing health information networks and escalation, (2) ensures that health care improves and that the costs become lower, and (3) considers continuous learning and improvement with the analysis of aggregated data from different sources.
 
-## What is the history of usability analyses with respect to the EHR and their vendors?
+# What is the history of usability analyses with respect to the EHR and their vendors?
 Very briefly, it is important to mention the state of usability testing and human-centered design approaches being used in current EHR systems. Compared to other types of research being done -- such as addition of clinical decision support to EHRs, creation of interoperability standards, predictive analytics, and integration of mobile technologies -- actual EHR system usability analyses are still in their infancy. A PubMed search for the terms “usability” AND “EHR” only resulted in an average of 35 publications every year, compared to the average 400 publications for “clinical decision support” and an average of 800 publications for “medical errors.” In 2015, Ratwani et al. conducted usability analyses of eleven EHR vendors in order to better understand the user-centered design principles being employed by these vendors and the overall usability of their systems. They found that, despite certification requirements from the Office of the National Coordinator (ONC) mandating the employment of user-centered design approached, many EHR vendors on the market today fail to have well-designed usability protocols and often have misconceptions due to lack of usability experience. The most common pitfalls reported include testing after deployment, failing to understand the utility of testing, failing to carefully study complex clinical workflows, lack of approval from leadership personnel, and low recruitment of participants for usability studies. 
 Without proper usability testing, systems will continue to fail to live up to their initial expectations and result in more medical errors. It is up to future developers and researchers to employ user-centered design principles throughout the development and implementation of EHR systems and to lobby behind the movement advocating for better usability.
 
@@ -105,7 +105,7 @@ Check out this infographic created by the Wellsoft group detailing the problems 
 
 
 
-## References
+# References
 
 Ratwani, R., Fairbanks, R., Hettinger, A., & Benda, N. (2015). Electronic health record usability: Analysis of the user-centered design processes of eleven electronic health record vendors. Journal of the American Medical Informatics Association, 22(6), 1179-1182.
 

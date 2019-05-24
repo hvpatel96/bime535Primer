@@ -47,20 +47,58 @@ The idea was not new, Luger et al. (2005) had already traced the early literatur
  
 In recent years, stimulus for improving EHR adoption in the US and its’ “Meaningful Use” (MU), the Health Information Exchange (HIE), the HITECH act (2009) and other health standards helped to support the CDS use because it can be useful in overcoming fragmentation problems, reducing the pressure from doctors and decreasing the time needed to make a medical decision. CDS would also be useful in identifying opportunities for intervention, education or monitoring with the advantage of making the workflow and team coordination easier. 
 
+# What are some current implementations of CDS?
 
-References
+Current clinical decision support systems come in a range of variations, such as built into commercial EHR systems, sold separately by CDS companies, or as systems developed and maintained by universities and hospitals themselves. 
+
+Modern EHR systems come with many guard rails in place. Dose alerts are one example. The system may show dose alerts when clinicians are about to order medications that have contraindications for a patient (e.g. the patient is allergic to it) or have a dose that looks incorrect, overdosing or underdosing the patient. Later, when a nurse or other clinician prepares to give the ordered medication at the patient bedside, he or she first scans a barcode attached to the patient wrist band and then the medication through a barcode printed on the medication packaging. This process, called bar coded medication administration (BCMA), allows the system to verify that the correct medication is being given to the correct patient by retrieving the record belonging to the scanned patient and confirming the validity of the scanned medication for that patient. Drugs often sound similar and packages or pills often look similar, and this process can prevent clinicians from giving incorrect medications (The Leapfrog Group, 2018).
+
+A second avenue through which clinical decision support is commonly given to healthcare professionals today is through third party decision support vendors, such as Medicalis and National Decision Support Company. These vendors often integrate with the EHR system directly, allowing the software to show custom alerts to users in response to specified triggers under specified conditions. Sometimes called Best Practice alerts, these often implement clinical guidelines and even maintain their own databases of information such as drug-drug interactions. An example of such an alert might be a suggestion that an overweight patient receive weight loss counseling a nutritionist. The inherent tradeoff with purchasing a library of clinical decision support specifications from the perspective of a healthcare organization is that some alerts may not be relevant to the particular patient community, or may be too broad or too specific for the particular healthcare organization’s preferences. Thus, hospitals still have to shop around for CDS services that meet their specific needs, and subsequently customize the system further, which is cost intensive (Rath, 2016). 
+
+Healthcare organizations may also define their own Best Practice alerts using the same set of triggers and specification options. While this is more resource intensive than buying a ready-made library of such specifications from a CDS vendor, alerts can be fully customized; additionally, for some alerts, healthcare organizations will have no choice but to create them themselves, e.g. for hospital-specific initiatives.
+
+Currently, however, each CDS vendor must work with the EHR vendors in order to integrate with their various software systems (Rath, 2016). CDS Hooks is a current effort by HL7 to standardize the process of triggering events from the EHR and allowing third party systems to respond to such events with clinical decision support information. This would allow the clinical decision support vendor market to diversify and reduce the barriers to implementing clinical decision support (HL7 CDS Hooks). While the tool is not fully mature yet, it is freely available for exploration on Github (CDS Hooks Github) and numerous tutorials are available, including one created by students in the Biomedical Informatics department at the University of Washington (UW FHIR CDS Hook Tutorial).
+
+A more recently emerging form of CDS is predictive modeling of patients’ risk for adverse events. For this purpose, machine learning methods have been applied to build predictive models capable of determining patient risk in real time. Through the development of data-driven predictive models and their implementation in clinical settings, nurses, doctors, and other healthcare professionals can be alerted in real time if the model detects patients at risk for poor outcomes. Early detection can help with patient morbidity, mortality, and health care costs. Recently, several clinical challenges have been extensively modeled by such predictive models; for example, sepsis risk, 30-day hospital readmission risk, and appointment no-shows (Bresnick, 2018). Simple risk scores, like SIRS and SOFA for early detection of sepsis, exist and are often used in an attempt to identify patients at high risk, so interventions can be targeted early and effectively. These risk scores are often outperformed by machine learning models (e.g. Desautels, 2016); however, their parsimony may be desirable in some settings: the qSOFA score allows classification of patients merely by combining patient mental status, respiratory rate, and blood pressure.
+
+
+
+
+
+# References
 
 A Historical Look At The Evolution Of Clinical Decision Support. (n.d.). Retrieved May 12, 2019, from https://www.healthitoutcomes.com/doc/a-historical-look-at-the-evolution-of-clinical-decision-support-0001
+
 Greenes, R. A. (2014). A Brief History of Clinical Decision Support. In Clinical Decision Support (pp. 49–109). Elsevier. https://doi.org/10.1016/B978-0-12-398476-0.00002-6
+
 To Err Is Human. (2000). Washington, D.C.: National Academies Press. https://doi.org/10.17226/9728
 U.S. Department of Health and Human Services. (n.d.). Computerized Provider Order Entry. Retrieved from https://psnet.ahrq.gov/primers/primer/6/computerized-provider-order-entry
-What is computerized provider order entry? | HealthIT.gov. (n.d.). Retrieved May 19, 2019, from https://www.healthit.gov/faq/what-computerized-provider-order-entry
+
+What is computerized provider order entry? \| HealthIT.gov. (n.d.). Retrieved May 19, 2019, from https://www.healthit.gov/faq/what-computerized-provider-order-entry
+
 Luger, G. F. (2005). Artificial intelligence: structures and strategies for complex problem solving. Pearson education.
+
+The Leapfrog Group. (2018) New Report on Bar Code Medication Administration Finds Virtually All Hospitals Have the Technology, but Lack Requirements to Deploy it Effectively. 
+
+HL7. CDS Hooks. Retrieved from https://cds-hooks.hl7.org/
+
+Rath, D. (2016, September 21). What Is CDS Hooks? An Interview with Josh Mandel About FHIR and Clinical Decision Support. Retrieved from https://www.hcinnovationgroup.com/interoperability-hie/blog/13027466/what-is-cds-hooks-an-interview-with-josh-mandel-about-fhir-and-clinical-decision-support
+
+CDS Hooks. Github. Available at https://github.com/cds-hooks
+
+UW FHIR CDS Hook Tutorial. Github. Available at https://github.com/uw-fhir/CDS-Hooks-Tutorial/blob/master/tutorial.md
+
+Bresnick, J. (2018) 10 High-Value Use Cases for Predictive Analytics in Healthcare. Health IT Analytics.
+
+Desautels, T., Calvert, J., Hoffman, J., Jay, M., Kerem, Y., Shieh, L., . . . Das, R. (2016). Prediction of Sepsis in the Intensive Care Unit With Minimal Electronic Health Record Data: A Machine Learning Approach. JMIR Medical Informatics, 4(3), E28.
+
+Payne, T. H. (2018). EHR-related alert fatigue: minimal progress to date, but much more can be done. BMJ Quality & Safety. https://doi.org/10.1136/bmjqs-2017-007737
+
+Rehr, C. A., Wong, A., Seger, D. L., & Bates, D. W. (2018). Determining Inappropriate Medication Alerts from "Inaccurate Warning" Overrides in the Intensive Care Unit. Applied clinical informatics, 9(2), 268–274. doi:10.1055/s-0038-1642608
 
 # Additional questions:
 What is Clinical Decision Support?
 What are some current implementations of CDS?
-Many Clinical Decision Support systems are currently in use across the country and the world. 
 What successes and failures have current implementations seen?
 What are the important issues, benefits, and lessons learned?
 What are the challenges related to socio-cultural factors?
