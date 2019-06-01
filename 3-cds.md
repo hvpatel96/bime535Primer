@@ -27,14 +27,16 @@ title: "CDS and CPOE"
 # What is CDS?
 
 Clinical Decision Support (CDS) encompasses all tools, software and hardware, that provides clinicians, patients, and related healthcare individuals with intelligently curated knowledge and patient-specific information in order to improve the quality of care and overall well being of the patient (HealthIT.gov). CDS often takes the form of computerized alerts, clinical guidelines, condition-specific knowledge sets, personalized patient reports, and diagnostic support. According to the AHRQ, there exist five “rights” of CDS that can be used as a framework for the development and assessment of clinical decision support systems (CDSS). 
-
+<br/>
+<br/>
 > > “The CDS Five Rights model states that we can achieve CDS-supported improvements in desired healthcare outcomes if we communicate:
 > > 1. The right information: evidence-based, suitable to guide action, pertinent to the circumstance
 > > 2. To the right person: considering all members of the care team, including clinicians, patients, and their caretakers
 > > 3. In the right CDS intervention format: such as an alert, order set, or reference information to answer a clinical question
 > > 4. Through the right channel: for example, a clinical information system (CIS) such as an electronic medical record (EMR), personal health record (PHR), or a more general channel such as the Internet or a mobile device
 > > 5. At the right time in workflow: for example, at time of decision/action/need”
-
+<br/>
+<br/>
 When reading through the remainder of this chapter, keep this framework in mind and try to organize the information presented into the different components listed above. Some questions to consider are: (Try to think of others that relate back to the framework!)
 * Did the system utilize the right information?
 * Was the information delivered to the right person and during the right time in the care process?
