@@ -24,18 +24,21 @@ title: "CDS and CPOE"
 	vegaEmbed("#vis", spec, opt);
 </script>
 
-# What is CPOE and how does it relate to CDS?
+# What is CDS?
 
-A Computerized Provider Order Entry (CPOE) is a system in which clinicians place medical orders electronically and that order is directly transmitted to the recipient. It was conceived primarily for providing safety to medication orders and has now expanded its’ use for the ordering of tests, procedures and other consultations. Although it has benefit clinicians and patients, CPOE also has its’ own risks and unintended consequences of digitalizing a health care process especially if the system is poorly designed or has poor usability. Some of the unintended consequences can be the disruption of the clinician workflow, increasing the clinicians’ cognitive load, overdependence on technology, generation of new types of errors, alert fatigue, unfavorable changes in communication patterns between clinicians and patients, among others.
- 
-Historically, prescribing and administrating medications involves the following steps:
- 
-1. Ordering: Where the clinicians choose the appropriate medication, dose, and administration frequency.
-2. Transcribing: Where the prescription must be read and understood by the recipient, especially if it is handwritten.
-3. Dispensing: Where the pharmacist checks for allergies and drug-drug interactions before releasing the appropriate quantity of the medication.
-4. Administering: Where the correct patient must receive the correct medication in the correct dosage at the right time. This step is usually done by nurses.
- 
-Similar steps are followed for prescribing laboratory or imaging orders. In all of these cases, the majority of errors occur in the ordering and transcribing steps due to a variety of reasons like poor handwriting, ambiguous abbreviations, incompleteness, or lack of knowledge. Using a CPOE prevents those errors by standardizing providers’ orders in a legible a complete format. In addition, it provides EHR integration and improves efficiency by saving time in order entry and retrieval. Since CPOE technology usually includes built-in CDS tools, it can check for a drug-drug interaction, allergies, and make suggestions for values of drug dosages, routes of administration and frequencies. Sophisticated CDS tools can even prevent omission of certain tests or procedures for a certain condition. Even though CPOE adds several benefits to the organization, it cannot prevent errors that occur during dispensing or administration stages or when clinicians bypass safety steps for entering and processing unsafe orders.
+Clinical Decision Support (CDS) encompasses all tools, software and hardware, that provides clinicians, patients, and related healthcare individuals with intelligently curated knowledge and patient-specific information in order to improve the quality of care and overall well being of the patient (HealthIT.gov). CDS often takes the form of computerized alerts, clinical guidelines, condition-specific knowledge sets, personalized patient reports, and diagnostic support. According to the AHRQ, there exist five “rights” of CDS that can be used as a framework for the development and assessment of clinical decision support systems (CDSS). 
+
+> > “The CDS Five Rights model states that we can achieve CDS-supported improvements in desired healthcare outcomes if we communicate:
+> > 1. The right information: evidence-based, suitable to guide action, pertinent to the circumstance
+> > 2. To the right person: considering all members of the care team, including clinicians, patients, and their caretakers
+> > 3. In the right CDS intervention format: such as an alert, order set, or reference information to answer a clinical question
+> > 4. Through the right channel: for example, a clinical information system (CIS) such as an electronic medical record (EMR), personal health record (PHR), or a more general channel such as the Internet or a mobile device
+> > 5. At the right time in workflow: for example, at time of decision/action/need”
+
+When reading through the remainder of this chapter, keep this framework in mind and try to organize the information presented into the different components listed above. Some questions to consider are: (Try to think of others that relate back to the framework!)
+* Did the system utilize the right information?
+* Was the information delivered to the right person and during the right time in the care process?
+* Was the intervention format appropriate? Can it be improved by integrating it within a better channel?
 
 # What is the history of CDS?
 
@@ -61,7 +64,18 @@ Currently, however, each CDS vendor must work with the EHR vendors in order to i
 
 A more recently emerging form of CDS is predictive modeling of patients’ risk for adverse events. For this purpose, machine learning methods have been applied to build predictive models capable of determining patient risk in real time. Through the development of data-driven predictive models and their implementation in clinical settings, nurses, doctors, and other healthcare professionals can be alerted in real time if the model detects patients at risk for poor outcomes. Early detection can help with patient morbidity, mortality, and health care costs. Recently, several clinical challenges have been extensively modeled by such predictive models; for example, sepsis risk, 30-day hospital readmission risk, and appointment no-shows (Bresnick, 2018). Simple risk scores, like SIRS and SOFA for early detection of sepsis, exist and are often used in an attempt to identify patients at high risk, so interventions can be targeted early and effectively. These risk scores are often outperformed by machine learning models (e.g. Desautels, 2016); however, their parsimony may be desirable in some settings: the qSOFA score allows classification of patients merely by combining patient mental status, respiratory rate, and blood pressure (Burkhardt, 2018).
 
+# What is CPOE and how does it relate to CDS?
 
+A Computerized Provider Order Entry (CPOE) is a system in which clinicians place medical orders electronically and that order is directly transmitted to the recipient. It was conceived primarily for providing safety to medication orders and has now expanded its’ use for the ordering of tests, procedures and other consultations. Although it has benefit clinicians and patients, CPOE also has its’ own risks and unintended consequences of digitalizing a health care process especially if the system is poorly designed or has poor usability. Some of the unintended consequences can be the disruption of the clinician workflow, increasing the clinicians’ cognitive load, overdependence on technology, generation of new types of errors, alert fatigue, unfavorable changes in communication patterns between clinicians and patients, among others.
+ 
+Historically, prescribing and administrating medications involves the following steps:
+ 
+1. Ordering: Where the clinicians choose the appropriate medication, dose, and administration frequency.
+2. Transcribing: Where the prescription must be read and understood by the recipient, especially if it is handwritten.
+3. Dispensing: Where the pharmacist checks for allergies and drug-drug interactions before releasing the appropriate quantity of the medication.
+4. Administering: Where the correct patient must receive the correct medication in the correct dosage at the right time. This step is usually done by nurses.
+ 
+Similar steps are followed for prescribing laboratory or imaging orders. In all of these cases, the majority of errors occur in the ordering and transcribing steps due to a variety of reasons like poor handwriting, ambiguous abbreviations, incompleteness, or lack of knowledge. Using a CPOE prevents those errors by standardizing providers’ orders in a legible a complete format. In addition, it provides EHR integration and improves efficiency by saving time in order entry and retrieval. Since CPOE technology usually includes built-in CDS tools, it can check for a drug-drug interaction, allergies, and make suggestions for values of drug dosages, routes of administration and frequencies. Sophisticated CDS tools can even prevent omission of certain tests or procedures for a certain condition. Even though CPOE adds several benefits to the organization, it cannot prevent errors that occur during dispensing or administration stages or when clinicians bypass safety steps for entering and processing unsafe orders.
 
 
 
@@ -97,11 +111,4 @@ Payne, T. H. (2018). EHR-related alert fatigue: minimal progress to date, but mu
 Rehr, C. A., Wong, A., Seger, D. L., & Bates, D. W. (2018). Determining Inappropriate Medication Alerts from "Inaccurate Warning" Overrides in the Intensive Care Unit. Applied clinical informatics, 9(2), 268–274. doi:10.1055/s-0038-1642608
 
 Adapted from Burkhardt, Hannah. (2018) Machine Learning and Biomedical Informatics. BIME 530.
-
-# Additional questions:
-What is Clinical Decision Support?
-What are some current implementations of CDS?
-What successes and failures have current implementations seen?
-What are the important issues, benefits, and lessons learned?
-What are the challenges related to socio-cultural factors?
 
