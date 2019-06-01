@@ -8,7 +8,7 @@ The Triple Aim is a framework that aims to integrate several pillars of healthca
 This framework addresses several major issues of the modern US healthcare system: lack of preventative care, low quality care and poor patient satisfaction, and high costs of care. The Triple Aim is designed to encourage a cooperative integration of interventions that address all three of the the following aspects of healthcare:
 
 <center><img src='images/image4.jpg' width="500"></center>
-<center><sub><sup>Image Source: Stiefel & Nolan, 2012, http://www.ihi.org/resources/Pages/IHIWhitePapers/AGuidetoMeasuringTripleAim.aspx</sup></sub><center>
+<sub><sup>Image Source: Stiefel & Nolan, 2012, http://www.ihi.org/resources/Pages/IHIWhitePapers/AGuidetoMeasuringTripleAim.aspx</sup></sub>
 <br/>
 <br/>
 
