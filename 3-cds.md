@@ -34,9 +34,10 @@ Clinical Decision Support (CDS) encompasses all tools, software and hardware, th
 > > 2. To the right person: considering all members of the care team, including clinicians, patients, and their caretakers
 > > 3. In the right CDS intervention format: such as an alert, order set, or reference information to answer a clinical question
 > > 4. Through the right channel: for example, a clinical information system (CIS) such as an electronic medical record (EMR), personal health record (PHR), or a more general channel such as the Internet or a mobile device
-> > 5. At the right time in workflow: for example, at time of decision/action/need”
-<br/>
-<br/>
+> > 5. At the right time in workflow: for example, at time of decision/action/need"
+
+
+
 When reading through the remainder of this chapter, keep this framework in mind and try to organize the information presented into the different components listed above. Some questions to consider are: (Try to think of others that relate back to the framework!)
 * Did the system utilize the right information?
 * Was the information delivered to the right person and during the right time in the care process?
