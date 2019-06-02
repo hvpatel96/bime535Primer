@@ -70,7 +70,7 @@ A more recently emerging form of CDS is predictive modeling of patients’ risk 
 
 Computerized Provider Order Entry (CPOE) is a system in which clinicians place medical orders electronically, and the order is directly transmitted to the recipient. It was conceived primarily for improving the safety of medication orders, but it is now also used to order lab tests and medical procedures, and request specialized consultations. Although it has benefitted clinicians and patients, CPOE also carries its own risks and unintended consequences. Digitalizing any health care process runs the risk of creating products that are poorly designed and/or have poor usability. Some of the unintended consequences can include disrupting the clinician workflow, increasing the clinicians’ cognitive load, increasing physicians' overdependence on technology, generating of new types of errors, causing alert fatigue, and causing unfavorable changes in communication patterns between clinicians and patients, among others issues.
  
-Historically, prescribing and administrating medications involves the following steps:
+Historically, prescribing and administering medications involves the following steps:
  
 1. Ordering: The clinicians choose the appropriate medication, dose, and administration frequency.
 2. Transcribing: The prescription must be read and understood by the recipient (i.e. pharmacist), especially if it is handwritten.
