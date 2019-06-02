@@ -79,38 +79,46 @@ Historically, prescribing and administrating medications involves the following 
  
 Similar steps are followed for prescribing laboratory or imaging orders. In all of these cases, the majority of errors occur in the ordering and transcribing steps due to a variety of reasons, like poor handwriting, ambiguous abbreviations, incompleteness, or lack of medical knowledge. Using CPOE helps prevent those errors by standardizing providers’ orders in a legible and complete format. In addition, it promotes EHR integration and improves efficiency by saving time during order entry and retrieval tasks. Since CPOE technology usually includes built-in CDS tools, it can check for drug-drug interactions and patient allergies, and make suggestions for values of drug dosages, routes of administration and frequencies. Sophisticated CDS tools can even prevent omission of certain tests or procedures for a certain condition. Even though CPOE provides several benefits to the organization, it cannot prevent errors that occur during actual dispensing or administration stages, or prevent clinicians from intentionally bypassing safety alerts.
 
+# What are some important issues, benefits, and lessons learned from CDS?
+
+A major problem with any kind of clinical decision support is that of alert fatigue. Clinicians may receive over 100 alerts in a single work day (Payne, 2018). Many of these alerts are not applicable for various reasons - e.g. a pregnancy warning may not be applicable to a male patient, or a drug sensitivity warning may show repeatedly even after the potential sensitivity has been determined to be a non-issue. Being exposed to such inaccurate alerts repeatedly may erode healthcare professionals’ trust in CDS alerts, which in turn may cause them to disregard applicable high impact alerts later on. Efforts have been made to identify why certain alerts are dismissed without being addressed, and whether or not the dismissal is appropriate; for example, Rehr et al. (2018) found that, while some alerts were being overridden inappropriately, there were also many appropriate overrides due to reasons such as prior tolerance and inaccurate ingredient matches.
+
+Other challenges of clinical decision support systems include: incomplete medical knowledge bases, difficulties in converting evidence-derived information into a computable format, problems with project planning and management during the design and implementation phases of CDS integration, and financial disincentives justifying the use of CDS in smaller practices (AHRQ 2010). In regards to the first two challenges, the corpus of medical knowledge is a constantly evolving text with anecdotal rules of thumb mixed together with research-backed evidence and methodologies. One of the greatest challenges hindering the progression of CDS is the question of extracting useful and up to date information quickly and providing that to the user in a readable format. Some CDS systems are built on existing knowledge bases and utilize ontologies (or established terminologies) for organization, but even these change from year to year and must be updated often to incorporate changes in medical thought and research. On top of that, not all knowledge is easily converted into code. Due to the probabilistic nature of diagnoses and medical interactions, it is often difficult to accurately represent information without sacrificing time, efficiency, and output readability.  Without a computable, “learning” knowledge base, it is difficult to build a truly adaptive CDS.
+
+
 
 
 # References
 
+Adapted from Burkhardt, Hannah. (2018) Machine Learning and Biomedical Informatics. BIME 530.
+
 A Historical Look At The Evolution Of Clinical Decision Support. (n.d.). Retrieved May 12, 2019, from https://www.healthitoutcomes.com/doc/a-historical-look-at-the-evolution-of-clinical-decision-support-0001
 
+Bresnick, J. (2018) 10 High-Value Use Cases for Predictive Analytics in Healthcare. Health IT Analytics.
+
+CDS Hooks. Github. Available at https://github.com/cds-hooks
+
+Desautels, T., Calvert, J., Hoffman, J., Jay, M., Kerem, Y., Shieh, L., . . . Das, R. (2016). Prediction of Sepsis in the Intensive Care Unit With Minimal Electronic Health Record Data: A Machine Learning Approach. JMIR Medical Informatics, 4(3), E28.
+
 Greenes, R. A. (2014). A Brief History of Clinical Decision Support. In Clinical Decision Support (pp. 49–109). Elsevier. https://doi.org/10.1016/B978-0-12-398476-0.00002-6
+
+HL7. CDS Hooks. Retrieved from https://cds-hooks.hl7.org/
+
+Luger, G. F. (2005). Artificial intelligence: structures and strategies for complex problem solving. Pearson education.
+
+Payne, T. H. (2018). EHR-related alert fatigue: minimal progress to date, but much more can be done. BMJ Quality & Safety. https://doi.org/10.1136/bmjqs-2017-007737
+
+Rath, D. (2016, September 21). What Is CDS Hooks? An Interview with Josh Mandel About FHIR and Clinical Decision Support. Retrieved from https://www.hcinnovationgroup.com/interoperability-hie/blog/13027466/what-is-cds-hooks-an-interview-with-josh-mandel-about-fhir-and-clinical-decision-support
+
+Rehr, C. A., Wong, A., Seger, D. L., & Bates, D. W. (2018). Determining Inappropriate Medication Alerts from "Inaccurate Warning" Overrides in the Intensive Care Unit. Applied clinical informatics, 9(2), 268–274. doi:10.1055/s-0038-1642608
+
+The Leapfrog Group. (2018) New Report on Bar Code Medication Administration Finds Virtually All Hospitals Have the Technology, but Lack Requirements to Deploy it Effectively.
 
 To Err Is Human. (2000). Washington, D.C.: National Academies Press. https://doi.org/10.17226/9728
 U.S. Department of Health and Human Services. (n.d.). Computerized Provider Order Entry. Retrieved from https://psnet.ahrq.gov/primers/primer/6/computerized-provider-order-entry
 
-What is computerized provider order entry? \| HealthIT.gov. (n.d.). Retrieved May 19, 2019, from https://www.healthit.gov/faq/what-computerized-provider-order-entry
-
-Luger, G. F. (2005). Artificial intelligence: structures and strategies for complex problem solving. Pearson education.
-
-The Leapfrog Group. (2018) New Report on Bar Code Medication Administration Finds Virtually All Hospitals Have the Technology, but Lack Requirements to Deploy it Effectively. 
-
-HL7. CDS Hooks. Retrieved from https://cds-hooks.hl7.org/
-
-Rath, D. (2016, September 21). What Is CDS Hooks? An Interview with Josh Mandel About FHIR and Clinical Decision Support. Retrieved from https://www.hcinnovationgroup.com/interoperability-hie/blog/13027466/what-is-cds-hooks-an-interview-with-josh-mandel-about-fhir-and-clinical-decision-support
-
-CDS Hooks. Github. Available at https://github.com/cds-hooks
-
 UW FHIR CDS Hook Tutorial. Github. Available at https://github.com/uw-fhir/CDS-Hooks-Tutorial/blob/master/tutorial.md
 
-Bresnick, J. (2018) 10 High-Value Use Cases for Predictive Analytics in Healthcare. Health IT Analytics.
+What is computerized provider order entry? \| HealthIT.gov. (n.d.). Retrieved May 19, 2019, from https://www.healthit.gov/faq/what-computerized-provider-order-entry
 
-Desautels, T., Calvert, J., Hoffman, J., Jay, M., Kerem, Y., Shieh, L., . . . Das, R. (2016). Prediction of Sepsis in the Intensive Care Unit With Minimal Electronic Health Record Data: A Machine Learning Approach. JMIR Medical Informatics, 4(3), E28.
-
-Payne, T. H. (2018). EHR-related alert fatigue: minimal progress to date, but much more can be done. BMJ Quality & Safety. https://doi.org/10.1136/bmjqs-2017-007737
-
-Rehr, C. A., Wong, A., Seger, D. L., & Bates, D. W. (2018). Determining Inappropriate Medication Alerts from "Inaccurate Warning" Overrides in the Intensive Care Unit. Applied clinical informatics, 9(2), 268–274. doi:10.1055/s-0038-1642608
-
-Adapted from Burkhardt, Hannah. (2018) Machine Learning and Biomedical Informatics. BIME 530.
 
