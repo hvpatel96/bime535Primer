@@ -1,3 +1,8 @@
+---
+layout: page
+title: "HIE"
+---
+
 # What is the current state of HIE adoption?
 
 Since the passing of the Health Information Technology for Economic and Clinical Health (HITECH) Act in 2009, a lot of attention has been given to accelerating the adoption of health information technology. HITECH’s goals are promoting the adoption and use of Electronic Health Records (EHRs) and Health Information Exchange (HIE) for improving costs and quality of the US health care delivery system by modernizing it. Following that Act, between 2009 and 2014, the percentage of hospitals adopting basic EHR grew from 12.2% to 75.5% (Mackert, Mabry-Flynn, Champlin, Donovan, & Pounders, 2016).
