@@ -1,0 +1,13 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+
+
+
+table { margin-bottom: 0; width: 100%; text-align: left; color: #000; border-collapse: collapse; border: 0px solid #e8e8e8; }
+table tr:nth-child(even) { background-color: #fff; }
+table th, table td { padding: 0px 0px; }
+table th { background-color: #f0f0f0; border: 0px solid #dedede; border-bottom-color: #c9c9c9; }
+table td { border: 0px solid #e8e8e8; }

@@ -2,6 +2,101 @@
 layout: page
 title: "Health Information Exchange"
 ---
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@3.2.1"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@4"></script>
+<div id="vis"></div>
+<script type="text/javascript">
+                    var spec ={
+  "config": {"view": {"width": 400, "height": 300}, "mark": {"tooltip": null}},
+  "hconcat": [
+    {
+      "hconcat": [
+        {
+          "data": {
+            "url": "https://vega.github.io/vega-datasets/data/us-10m.json",
+            "format": {"feature": "states", "type": "topojson"}
+          },
+          "mark": "geoshape",
+          "encoding": {
+            "color": {
+              "type": "quantitative",
+              "field": "pct_phys_e_Rx_ehr",
+              "legend": {"format": "%"},
+              "title": "Percent"
+            },
+            "tooltip": [
+              {
+                "type": "quantitative",
+                "field": "pct_phys_e_Rx_ehr",
+                "format": ".0%",
+                "title": "Percent"
+              },
+              {"type": "nominal", "field": "region"},
+              {"type": "nominal", "field": "year"}
+            ]
+          },
+          "projection": {"type": "albersUsa"},
+          "title": "2008",
+          "transform": [
+            {
+              "lookup": "id",
+              "from": {
+                "data": {"url": "data2008.json"},
+                "key": "state_fips",
+                "fields": ["pct_phys_e_Rx_ehr", "region", "year"]
+              }
+            }
+          ]
+        },
+        {
+          "data": {
+            "url": "https://vega.github.io/vega-datasets/data/us-10m.json",
+            "format": {"feature": "states", "type": "topojson"}
+          },
+          "mark": "geoshape",
+          "encoding": {
+            "color": {
+              "type": "quantitative",
+              "field": "pct_phys_e_Rx_ehr",
+              "legend": {"format": "%"},
+              "title": "Percent"
+            },
+            "tooltip": [
+              {
+                "type": "quantitative",
+                "field": "pct_phys_e_Rx_ehr",
+                "format": ".0%",
+                "title": "Percent"
+              },
+              {"type": "nominal", "field": "region"},
+              {"type": "nominal", "field": "year"}
+            ]
+          },
+          "projection": {"type": "albersUsa"},
+          "title": "2014",
+          "transform": [
+            {
+              "lookup": "id",
+              "from": {
+                "data": {"url": "data2014.json"},
+                "key": "state_fips",
+                "fields": ["pct_phys_e_Rx_ehr", "region", "year"]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "title": "Percent of physicians exchanging prescription information through Surescripts (Data from healthit.gov)",
+  "$schema": "https://vega.github.io/schema/vega-lite/v3.2.1.json"
+}
+                    var opt = {"renderer": "canvas", "actions": false};  /* Options for the embedding */
+                    vegaEmbed("#vis", spec, opt);
+</script>
+
 # What is Health Information Exchange and what are the current technologies and implementations?
 Health Information Exchange (HIE) is the idea that healthcare providers and other entities in need of health information are able to exchange this information. Players might include clinics, hospitals, patients, labs, public health agencies, researchers, schools, and many others. These entities might exchange information about patients for various reasons, e.g. to enable continuous healthcare delivery for the patients seeing providers at different clinics, to conduct public health surveillance and monitor intervention effectiveness, or to conduct data analytics for research or quality improvement purposes.
 
