@@ -1,7 +1,14 @@
 ---
 layout: page
-title: "HIE"
+title: "Health Information Exchange"
 ---
+# What is Health Information Exchange and what are the current technologies and implementations?
+Health Information Exchange (HIE) is the idea that healthcare providers and other entities in need of health information are able to exchange this information. Players might include clinics, hospitals, patients, labs, public health agencies, researchers, schools, and many others. These entities might exchange information about patients for various reasons, e.g. to enable continuous healthcare delivery for the patients seeing providers at different clinics, to conduct public health surveillance and monitor intervention effectiveness, or to conduct data analytics for research or quality improvement purposes.
+
+There are several types of Health Information Exchange(“What is HIE? \| HealthIT.gov,” n.d.): **Directed exchange** involves providers and other entities who wish to exchange information sending information directly to each other over the internet, through channels such as secure/encrypted email or other messaging services. This type of exchange requires the exchange partners to have an established relationship (i.e. they know and trust each other). Direct exchange is utilized to exchange immunization information with public health agencies. In **query-based exchange**, healthcare providers (or other entities) request or search for a particular piece of information (which may be a whole record). Query-based exchange is often used for emergency care. **Consumer-mediated exchange** is a third type of HIE, where patients communicate their own data to other entities, e.g. they might share step data from a personal device with a healthcare provider. Consumers may also access and correct their own health information as part of consumer-mediated exchange.
+
+An example of a query-based exchange service is Surescipts(“Surescripts \| The Nation’s Most Trusted Health Information Network,” n.d.). Surescripts maintains an electronic database of drug prescriptions which is automatically updated whenever a healthcare provider utilizes “e-prescribing”. Healthcare organizations are responsible for enabling the  e-prescribing functionality in the EHRs, which ensures that data is continually sent to the Surescripts databases. Pharmacies and other providers then query this Health Information Exchange system for their patients’ prescription information.
+
 
 # What is the current state of HIE adoption?
 
@@ -30,3 +37,8 @@ Johnson, C., Pylypchuk, Y., & Patel, V. (2017). Methods Used to Enable Interoper
 Mackert, M., Mabry-Flynn, A., Champlin, S., Donovan, E. E., & Pounders, K. (2016). Health Literacy and Health Information Technology Adoption: The Potential for a New Digital Divide. Journal of Medical Internet Research, 18(10), e264. https://doi.org/10.2196/jmir.6349
 
 Sadoughi, F., Nasiri, S., & Ahmadi, H. (2018). The impact of health information exchange on healthcare quality and cost-effectiveness: A systematic literature review. Computer Methods and Programs in Biomedicine, 161, 209–232. https://doi.org/10.1016/J.CMPB.2018.04.023
+
+Surescripts \| The Nation’s Most Trusted Health Information Network. (n.d.). Retrieved June 5, 2019, from http://www.surescripts.com
+
+What is HIE? \| HealthIT.gov. (n.d.). Retrieved June 5, 2019, from https://www.healthit.gov/topic/health-it-and-health-information-exchange-basics/what-hie
+
