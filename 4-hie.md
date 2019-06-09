@@ -116,10 +116,22 @@ In 2014, (Adler-Milstein & Jha, 2014) reported that in the U.S. there is a large
 A variety of issues has been reported for improving the adoption of HIE systems. These problems can be separated into 4 major categories: Usability, Documents and Data Elements, System Architecture and Standards, and HIE Consent. The first category relates to system speed, real-time responses, proper usability of the system and disruption of providers workflow. The document and data item category relate to the problems of the ‘exchange document’ that will include relevant clinical data and the standards needed for the creation of such document. The third category, Architecture, and standards relates to documentation issues for the architectural standards that will support HIE among providers. The last category, Consent, is about the problems in the consent forms needed for the exchange of clinical information. All of those issues can be solved with enhancing policy support from the government that will allow a smaller healthcare organization to transition for using HIE even if they do not use market-leading EHRs or are not members of a large integrated health system (Everson & Cross, 2019).
 
 
+# What are the different institutional drivers and barriers of HIE adoption, and how do they agree and conflict with one another?
+
+From a patient safety and satisfaction perspective, it seems like a no-brainer that HIE should be swiftly adopted by all entities involved in coordinating care for patients. After all, it has the power to reduce medical error, improve healthcare quality and outcomes, and improve clinical decision support tools, among many other care-related benefits (“What are the benefits of health information exchange? | HealthIT.gov,” 2019). Additionally, HIE is technically within the best interest of healthcare payers and public health entities, because sharing information among providers can help reduce health-related costs by eliminating redundancy in the care process, and it can help improve public health monitoring by establishing a direct and immediate line of communication between providers and public health entities that are interested in gauging the health of a population using the rich information store within EHRs. Healthcare providers are required to implement HIE practices in order to fulfill the Stage 2 requirements of the Meaningful Use incentive plan, and the vast majority of providers recognize that HIE can improve the fluency and efficiency of their care workflows.
+
+However, the various forces that determine whether HIE policies and practices are actually created, adopted and implemented operate within a complex framework of stakeholders with wildly different priorities. Even if the interoperability issues of HIE were not a major barrier to implementation, exchanging health information might not be within the immediate best interest of all entities involved in the exchange--even if it is within the best interest of the general public. In the case of healthcare providers, the costs of incorporating these new technical capabilities into the EHR and continuously training staff to use these new capabilities pose financial barriers to many practices (Ross et al. 2010). Healthcare practices within less tightly knit communities are often more mistrustful of each other than those in communities with regular peer-peer professional and social interactions, and practices are less likely to adopt HIE protocols when there are higher levels of mistrust and competition among providers. Additionally, healthcare providers in competitive markets are more likely to value ownership over their own patient health data, and they view sharing health data as a potential threat to their share of the healthcare market (Yaeger et al. 2014). Finally, reduction of the redundancy in care services may not necessarily be an incentive for HIE adoption among healthcare providers who participate in a fee-for-service payment system, since the provider receives payment for services from third-party payers regardless of whether these services have already been performed by another provider for a given patient.
+
+However, providers are certainly not the only stakeholders who may resist HIE adoption. Patients themselves may also oppose widespread HIE implementation due to security and privacy concerns, which are becoming increasingly common and patients. Esmaeilzadeh & Sambasivan (2017) reviewed 36 peer-reviewed journal articles on patient attitudes toward HIE efforts between 2005 and 2015, and found that although patients understand that HIE would facilitate communication among their providers and improve their quality of care, they are concerned by the thought of many different organizations (both health-related and otherwise) having access to their private health data. As a consequence, recent efforts to make security breaches among health organizations more transparent (as featured on websites like the Department of Health and Human Services “Wall of Shame”) might make patients more reticent to support HIE efforts.
+
+
 # References
+
 Adler-Milstein, J., & Jha, A. K. (2014). Health information exchange among U.S. hospitals: Who’s in, who’s out, and why? Healthcare, 2(1), 26–32. https://doi.org/10.1016/j.hjdsi.2013.12.005
 
 Devine, E. B., Totten, A. M., Gorman, P., Eden, K. B., Kassakian, S., Woods, S., … Hersh, W. R. (2017). Health Information Exchange Use (1990-2015): A Systematic Review. EGEMs (Generating Evidence & Methods to Improve Patient Outcomes), 5(1), 27. https://doi.org/10.5334/egems.249
+
+Esmaeilzadeh & Sambasivan (2017). Patients’ support for health information exchange: a literature review and classification of key factors. BMC Med Inform Decis Mak 17(1): 33. doi: 10.1186/s12911-017-0436-2.
 
 Everson, J., & Cross, D. A. (2019). Mind the gap: the potential of alternative health information exchange. The American Journal of Managed Care, 25(1), 32–38. Retrieved from http://www.ncbi.nlm.nih.gov/pubmed/30667609
 
@@ -131,9 +143,16 @@ Johnson, C., Pylypchuk, Y., & Patel, V. (2017). Methods Used to Enable Interoper
 
 Mackert, M., Mabry-Flynn, A., Champlin, S., Donovan, E. E., & Pounders, K. (2016). Health Literacy and Health Information Technology Adoption: The Potential for a New Digital Divide. Journal of Medical Internet Research, 18(10), e264. https://doi.org/10.2196/jmir.6349
 
+Ross, S.E. et al. (2010). Health information exchange in small-to-medium sized family medicine practices: motivators, barriers, and potential facilitators of adoption. Int J Med Inf, 79(2): 123-129.
+
 Sadoughi, F., Nasiri, S., & Ahmadi, H. (2018). The impact of health information exchange on healthcare quality and cost-effectiveness: A systematic literature review. Computer Methods and Programs in Biomedicine, 161, 209–232. https://doi.org/10.1016/J.CMPB.2018.04.023
 
-Surescripts \| The Nation’s Most Trusted Health Information Network. (n.d.). Retrieved June 5, 2019, from http://www.surescripts.com
+Surescripts | The Nation’s Most Trusted Health Information Network. (n.d.). Retrieved June 5, 2019, from http://www.surescripts.com
 
-What is HIE? \| HealthIT.gov. (n.d.). Retrieved June 5, 2019, from https://www.healthit.gov/topic/health-it-and-health-information-exchange-basics/what-hie
+What are the benefits of health information exchange | HealthIT.gov (2019). Retrieved June 9, 2019, from https://www.healthit.gov/faq/what-are-benefits-health-information-exchange.
+
+What is HIE? | HealthIT.gov. (n.d.). Retrieved June 5, 2019, from https://www.healthit.gov/topic/health-it-and-health-information-exchange-basics/what-hie.
+
+Yaeger, V.A. et al (2014). Factors related to health information exchange participation and use. J Med Syst, 38(8): 1-9.
+
 
