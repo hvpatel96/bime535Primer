@@ -115,6 +115,21 @@ In 2014, (Adler-Milstein & Jha, 2014) reported that in the U.S. there is a large
  
 A variety of issues has been reported for improving the adoption of HIE systems. These problems can be separated into 4 major categories: Usability, Documents and Data Elements, System Architecture and Standards, and HIE Consent. The first category relates to system speed, real-time responses, proper usability of the system and disruption of providers workflow. The document and data item category relate to the problems of the ‘exchange document’ that will include relevant clinical data and the standards needed for the creation of such document. The third category, Architecture, and standards relates to documentation issues for the architectural standards that will support HIE among providers. The last category, Consent, is about the problems in the consent forms needed for the exchange of clinical information. All of those issues can be solved with enhancing policy support from the government that will allow a smaller healthcare organization to transition for using HIE even if they do not use market-leading EHRs or are not members of a large integrated health system (Everson & Cross, 2019).
 
+# What are some of the benefits of HIE?
+
+The primary benefits of a well run, optimized Health Information Exchange revolve around fast, real time, and secure transfer of patient information between different nodes within the healthcare information network. Below are some benefits for HIEs provided by HealthIT.gov:
+<br />
+<br />
+> > 1. Provides a vehicle for improving quality and safety of patient care by reducing medication and medical errors
+> > 2. Stimulates consumer education and patients' involvement in their own health care
+> > 3. Increases efficiency by eliminating unnecessary paperwork
+> > 4. Provides caregivers with clinical decision support tools for more effective care and treatment
+> > 5. Improves public health reporting and monitoring
+> > 6. Creates a potential loop for feedback between health-related research and actual practice
+> > 7. Reduces health related costs
+<br />
+<br />
+There are certainly more benefits than the ones listed above, but these are the key ones for informaticians to understand and work to better in the future. As we as a society move towards more personalized medicine and active collaboration between patients and their care providers, it is going to be more and more critical for infrastructure to exist that will allow such a future to exist. Without HIEs being researched, developed, and implemented, we will face a barrier that will limit the growth of information transfer. Connecting the above benefits to the different departments that exist in the UW BIME department, we see heavy emphasis on clinical informatics and public health informatics (e.g. clinical decision support tools and public health monitoring). However, this does not mean that the development of HIEs will not impact the other disciplines. With proper implementation, consumer health informatics and bioinformatics will also be impacted as we learn more how patients interact with one another and the challenges faced by representing biological knowledge. Despite these challenges, the benefits of HIE are too great to ignore and it will require careful collaboration between researchers, EHR vendors, technology experts, providers, the public health department, and others in the healthcare network to help usher in an age of seamless information sharing.
 
 # What are the different institutional drivers and barriers of HIE adoption, and how do they agree and conflict with one another?
 
