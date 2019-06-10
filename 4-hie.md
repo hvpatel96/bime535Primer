@@ -117,7 +117,7 @@ A variety of issues has been reported for improving the adoption of HIE systems.
 
 # What are some of the benefits of HIE?
 
-The primary benefits of a well run, optimized Health Information Exchange revolve around fast, real time, and secure transfer of patient information between different nodes within the healthcare information network. Below are some benefits for HIEs provided by HealthIT.gov:
+The primary benefits of a well run, optimized Health Information Exchange revolve around fast, real time, and secure transfer of patient information between different nodes within the healthcare information network. Below are some benefits for HIEs provided by [HealthIT.gov](https://www.healthit.gov/topic/health-it-basics/hie-benefits):
 <br />
 <br />
 > > 1. Provides a vehicle for improving quality and safety of patient care by reducing medication and medical errors
