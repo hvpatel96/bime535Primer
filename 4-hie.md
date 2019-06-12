@@ -126,7 +126,7 @@ The primary benefits of a well-run, optimized Health Information Exchange system
 > > 4. Provides caregivers with clinical decision support tools for more effective care and treatment
 > > 5. Improves public health reporting and monitoring
 > > 6. Creates a potential loop for feedback between health-related research and actual practice
-> > 7. Reduces health related costs
+> > 7. Reduces health related costs (e.g. no more duplication of healthcare labs and tests)
 <br />
 <br />
 
