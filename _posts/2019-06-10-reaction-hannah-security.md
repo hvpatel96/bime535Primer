@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Hopefully not hopeless"
+title:  "Harnessing data without compromising confidentiality: Hopefully not hopeless"
 date:   2019-06-10
 author: Hannah
 categories: reactions
